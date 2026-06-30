@@ -1,0 +1,6 @@
+import DonationForm from "@/components/forms/DonationForm";
+import PageHero from "@/components/ui/PageHero";
+
+export default function DonatePage() {
+  return <main><PageHero title="Donate" subtitle="Support education, health, mental wellness, relief, and community resilience." breadcrumbs={[{label:"Home",href:"/"},{label:"Donate"}]} /><section className="mx-auto grid max-w-7xl gap-8 px-5 py-16 sm:px-8 lg:grid-cols-[1.5fr_1fr]"><DonationForm /><aside className="space-y-5"><div className="rounded-lg bg-white p-6 shadow-sm"><h2 className="font-display text-2xl font-black text-primary">Your ₹1000 can...</h2><ul className="mt-4 grid gap-3 text-sm text-muted"><li>• Provide study materials</li><li>• Support counselling access</li><li>• Fund health camp essentials</li></ul></div><div className="rounded-lg bg-white p-6 shadow-sm"><h2 className="font-bold text-primary">Trust Badges</h2><div className="mt-3 flex flex-wrap gap-2">{["80G Tax Exempt","Registered Trust","Secure"].map((x) => <span key={x} className="rounded-full bg-accent/20 px-3 py-1 text-xs font-bold text-primary">{x}</span>)}</div></div><div className="rounded-lg bg-white p-6 shadow-sm"><h2 className="font-bold text-primary">Recent Donors</h2><p className="mt-3 text-sm text-muted">Anita ₹2500 • Rahul ₹1000 • Priya ₹5000</p></div></aside></section></main>;
+}
