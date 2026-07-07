@@ -12,7 +12,7 @@ export default function DonationAmountPicker() {
           key={amount}
           type="button"
           onClick={() => setSelected(amount)}
-          className={`rounded-md border px-4 py-3 text-sm font-bold ${selected === amount ? "border-accent bg-accent text-foreground" : "border-primary/15 bg-white text-primary"}`}
+          className={`rounded-md border px-4 py-3 text-sm font-bold ${selected === amount ? "border-accent bg-accent text-white" : "border-primary/15 bg-white text-primary"}`}
         >
           {amount}
         </button>

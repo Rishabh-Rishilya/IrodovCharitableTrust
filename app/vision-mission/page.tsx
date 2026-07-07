@@ -28,7 +28,7 @@ export default function VisionMissionPage() {
         </div>
         <h2 className="mt-12 font-display text-3xl font-black text-primary">SDG Alignment</h2>
         <div className="mt-6 grid gap-4 sm:grid-cols-3 lg:grid-cols-6">
-          {sdgs.map(([num, label]) => <div key={num} className="rounded-lg bg-white p-4 text-center shadow-sm"><div className="mx-auto grid size-14 place-items-center rounded-md bg-accent text-xl font-black text-foreground">{num}</div><p className="mt-3 text-sm font-bold text-primary">{label}</p></div>)}
+          {sdgs.map(([num, label]) => <div key={num} className="rounded-lg bg-white p-4 text-center shadow-sm"><div className="mx-auto grid size-14 place-items-center rounded-md bg-accent text-xl font-black text-white">{num}</div><p className="mt-3 text-sm font-bold text-primary">{label}</p></div>)}
         </div>
       </section>
     </main>

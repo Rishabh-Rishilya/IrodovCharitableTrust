@@ -10,24 +10,24 @@ export default function Home() {
           <h1 className="max-w-4xl font-display text-5xl font-black leading-tight sm:text-7xl">
             Empowering Lives Through Education, Health & Hope
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-white/80">
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-[#FFE1D2]">
             A national charitable institution advancing education, psychological wellness, healthcare, research, and social welfare.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link href="/programs" className="rounded-md border border-white/50 px-6 py-3 text-center font-bold">
               Explore Programs
             </Link>
-            <Link href="/donate" className="rounded-md bg-accent px-6 py-3 text-center font-black text-foreground">
+            <Link href="/donate" className="rounded-lg bg-accent px-6 py-3 text-center font-black text-white">
               Donate Now
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="bg-gray-50 px-5 py-16 sm:px-8">
+      <section className="bg-surface px-5 py-16 sm:px-8">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.8fr_1.2fr]">
           <div className="grid place-items-center">
-            <div className="grid size-56 place-items-center rounded-full bg-gray-200 text-5xl font-black text-primary shadow-inner">
+            <div className="grid size-56 place-items-center rounded-full bg-surface-2 text-5xl font-black text-primary shadow-inner">
               FN
             </div>
           </div>
@@ -47,14 +47,14 @@ export default function Home() {
           <article className="rounded-lg bg-primary p-8 text-white shadow-sm">
             <p className="text-4xl">Eye</p>
             <h2 className="mt-4 font-display text-3xl font-black">Vision</h2>
-            <p className="mt-4 leading-7 text-white/85">
+            <p className="mt-4 leading-7 text-[#FFE1D2]">
               To build an inclusive society where every individual has access to quality education, mental health support, and opportunities for holistic development.
             </p>
           </article>
           <article className="rounded-lg bg-accent p-8 text-white shadow-sm">
             <p className="text-4xl">Target</p>
             <h2 className="mt-4 font-display text-3xl font-black">Mission</h2>
-            <p className="mt-4 leading-7 text-white/90">
+            <p className="mt-4 leading-7 text-[#FFE1D2]">
               To serve humanity through education, psychological wellness, healthcare, research, and social welfare, with transparency, compassion, and excellence.
             </p>
           </article>
@@ -103,19 +103,19 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl gap-5 sm:grid-cols-2 lg:grid-cols-4">
           <div className="rounded-lg border border-white/15 bg-white/5 p-6 text-center">
             <p className="font-display text-4xl font-black text-accent">10000+</p>
-            <p className="mt-2 text-sm font-semibold text-white/80">Lives Impacted</p>
+            <p className="mt-2 text-sm font-semibold text-white">Lives Impacted</p>
           </div>
           <div className="rounded-lg border border-white/15 bg-white/5 p-6 text-center">
             <p className="font-display text-4xl font-black text-accent">500+</p>
-            <p className="mt-2 text-sm font-semibold text-white/80">Scholarships Awarded</p>
+            <p className="mt-2 text-sm font-semibold text-white">Scholarships Awarded</p>
           </div>
           <div className="rounded-lg border border-white/15 bg-white/5 p-6 text-center">
             <p className="font-display text-4xl font-black text-accent">15</p>
-            <p className="mt-2 text-sm font-semibold text-white/80">States Reached</p>
+            <p className="mt-2 text-sm font-semibold text-white">States Reached</p>
           </div>
           <div className="rounded-lg border border-white/15 bg-white/5 p-6 text-center">
             <p className="font-display text-4xl font-black text-accent">8</p>
-            <p className="mt-2 text-sm font-semibold text-white/80">Years of Service</p>
+            <p className="mt-2 text-sm font-semibold text-white">Years of Service</p>
           </div>
         </div>
       </section>
@@ -127,7 +127,7 @@ export default function Home() {
             <article className="min-w-80 overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-primary/10">
               <Image src="https://placehold.co/400x200/1A3C6E/FFFFFF/png?text=Rural+STEM+Labs" alt="" width={400} height={200} className="h-40 w-full object-cover" />
               <div className="p-5">
-                <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-bold text-primary">Bihar</span>
+                <span className="rounded-full bg-surface-2 px-3 py-1 text-xs font-bold text-primary">Bihar</span>
                 <h3 className="mt-4 font-display text-xl font-black">Rural STEM Learning Labs</h3>
                 <p className="mt-2 text-sm leading-6 text-muted">Hands-on science learning spaces for rural school students.</p>
                 <div className="mt-4 h-2 rounded-full bg-primary/10"><div className="h-2 w-[72%] rounded-full bg-accent" /></div>
@@ -137,7 +137,7 @@ export default function Home() {
             <article className="min-w-80 overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-primary/10">
               <Image src="https://placehold.co/400x200/1A3C6E/FFFFFF/png?text=Wellness+Helpline" alt="" width={400} height={200} className="h-40 w-full object-cover" />
               <div className="p-5">
-                <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-bold text-primary">Delhi NCR</span>
+                <span className="rounded-full bg-surface-2 px-3 py-1 text-xs font-bold text-primary">Delhi NCR</span>
                 <h3 className="mt-4 font-display text-xl font-black">Mental Wellness Helpline</h3>
                 <p className="mt-2 text-sm leading-6 text-muted">Counselling and crisis support access for young people.</p>
                 <div className="mt-4 h-2 rounded-full bg-primary/10"><div className="h-2 w-[80%] rounded-full bg-accent" /></div>
@@ -147,7 +147,7 @@ export default function Home() {
             <article className="min-w-80 overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-primary/10">
               <Image src="https://placehold.co/400x200/1A3C6E/FFFFFF/png?text=Scholarships" alt="" width={400} height={200} className="h-40 w-full object-cover" />
               <div className="p-5">
-                <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-bold text-primary">15 States</span>
+                <span className="rounded-full bg-surface-2 px-3 py-1 text-xs font-bold text-primary">15 States</span>
                 <h3 className="mt-4 font-display text-xl font-black">Scholarship Cohort 2024</h3>
                 <p className="mt-2 text-sm leading-6 text-muted">Need-based education aid for school and college learners.</p>
                 <div className="mt-4 h-2 rounded-full bg-primary/10"><div className="h-2 w-[64%] rounded-full bg-accent" /></div>
@@ -157,7 +157,7 @@ export default function Home() {
             <article className="min-w-80 overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-primary/10">
               <Image src="https://placehold.co/400x200/1A3C6E/FFFFFF/png?text=Health+Camps" alt="" width={400} height={200} className="h-40 w-full object-cover" />
               <div className="p-5">
-                <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-bold text-primary">Uttar Pradesh</span>
+                <span className="rounded-full bg-surface-2 px-3 py-1 text-xs font-bold text-primary">Uttar Pradesh</span>
                 <h3 className="mt-4 font-display text-xl font-black">Community Health Camps</h3>
                 <p className="mt-2 text-sm leading-6 text-muted">Preventive healthcare outreach with referral support.</p>
                 <div className="mt-4 h-2 rounded-full bg-primary/10"><div className="h-2 w-[68%] rounded-full bg-accent" /></div>
@@ -173,22 +173,22 @@ export default function Home() {
           <h2 className="font-display text-4xl font-black text-primary">Upcoming Events</h2>
           <div className="mt-8 grid gap-5 md:grid-cols-3">
             <article className="rounded-lg bg-white p-5 shadow-sm ring-1 ring-primary/10">
-              <div className="flex items-start justify-between gap-4"><span className="rounded-md bg-accent px-3 py-2 text-center font-black text-foreground">12<span className="block text-xs">Jul</span></span><span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-bold text-primary">Workshop</span></div>
+              <div className="flex items-start justify-between gap-4"><span className="rounded-lg bg-accent px-3 py-2 text-center font-black text-white">12<span className="block text-xs">Jul</span></span><span className="rounded-full bg-surface-2 px-3 py-1 text-xs font-bold text-primary">Workshop</span></div>
               <h3 className="mt-5 font-display text-xl font-black">Student Wellness Workshop</h3>
               <p className="mt-2 text-sm text-muted">Delhi</p>
-              <button className="mt-5 rounded-md bg-primary px-4 py-2 text-sm font-bold text-white">Register</button>
+              <button className="mt-5 rounded-md bg-accent px-4 py-2 text-sm font-bold text-white">Register</button>
             </article>
             <article className="rounded-lg bg-white p-5 shadow-sm ring-1 ring-primary/10">
-              <div className="flex items-start justify-between gap-4"><span className="rounded-md bg-accent px-3 py-2 text-center font-black text-foreground">26<span className="block text-xs">Jul</span></span><span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-bold text-primary">Medical Camp</span></div>
+              <div className="flex items-start justify-between gap-4"><span className="rounded-lg bg-accent px-3 py-2 text-center font-black text-white">26<span className="block text-xs">Jul</span></span><span className="rounded-full bg-surface-2 px-3 py-1 text-xs font-bold text-primary">Medical Camp</span></div>
               <h3 className="mt-5 font-display text-xl font-black">Mobile Health Camp</h3>
               <p className="mt-2 text-sm text-muted">Lucknow</p>
-              <button className="mt-5 rounded-md bg-primary px-4 py-2 text-sm font-bold text-white">Register</button>
+              <button className="mt-5 rounded-md bg-accent px-4 py-2 text-sm font-bold text-white">Register</button>
             </article>
             <article className="rounded-lg bg-white p-5 shadow-sm ring-1 ring-primary/10">
-              <div className="flex items-start justify-between gap-4"><span className="rounded-md bg-accent px-3 py-2 text-center font-black text-foreground">18<span className="block text-xs">Aug</span></span><span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-bold text-primary">Webinar</span></div>
+              <div className="flex items-start justify-between gap-4"><span className="rounded-lg bg-accent px-3 py-2 text-center font-black text-white">18<span className="block text-xs">Aug</span></span><span className="rounded-full bg-surface-2 px-3 py-1 text-xs font-bold text-primary">Webinar</span></div>
               <h3 className="mt-5 font-display text-xl font-black">Scholarship Orientation</h3>
               <p className="mt-2 text-sm text-muted">Online</p>
-              <button className="mt-5 rounded-md bg-primary px-4 py-2 text-sm font-bold text-white">Register</button>
+              <button className="mt-5 rounded-md bg-accent px-4 py-2 text-sm font-bold text-white">Register</button>
             </article>
           </div>
         </div>
@@ -218,30 +218,30 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
             <h2 className="font-display text-4xl font-black">Make a Difference Today</h2>
-            <p className="mt-4 text-white/80">Your donation is tax-exempt under Section 80G of the Income Tax Act</p>
+            <p className="mt-4 text-[#FFE1D2]">Your donation is tax-exempt under Section 80G of the Income Tax Act</p>
             <div className="mt-8 rounded-lg bg-white p-6 text-foreground">
-              <div className="flex flex-wrap gap-2 text-sm font-bold"><span className="rounded-md bg-accent px-3 py-2">One-time</span><span className="rounded-md bg-surface px-3 py-2 text-primary">Monthly</span><span className="rounded-md bg-surface px-3 py-2 text-primary">Sponsor a Cause</span></div>
+              <div className="flex flex-wrap gap-2 text-sm font-bold"><span className="rounded-lg bg-accent px-3 py-2 text-white">One-time</span><span className="rounded-md bg-surface px-3 py-2 text-primary">Monthly</span><span className="rounded-md bg-surface px-3 py-2 text-primary">Sponsor a Cause</span></div>
               <div className="mt-5 grid gap-3 sm:grid-cols-3"><button className="rounded-md border border-primary/15 px-4 py-3 font-bold text-primary">Rs. 500</button><button className="rounded-md border border-primary/15 px-4 py-3 font-bold text-primary">Rs. 1000</button><button className="rounded-md border border-primary/15 px-4 py-3 font-bold text-primary">Rs. 2500</button><button className="rounded-md border border-primary/15 px-4 py-3 font-bold text-primary">Rs. 5000</button><button className="rounded-md border border-primary/15 px-4 py-3 font-bold text-primary">Rs. 10000</button><input className="rounded-md border border-primary/15 px-4 py-3" placeholder="Custom" /></div>
               <select className="mt-4 w-full rounded-md border border-primary/15 px-4 py-3"><option>General Fund</option><option>Education</option><option>Mental Health</option><option>Healthcare</option><option>Social Welfare</option><option>Disaster Relief</option></select>
-              <Link href="/donate" className="mt-4 block rounded-md bg-accent px-5 py-3 text-center font-black">Donate Now</Link>
+              <Link href="/donate" className="mt-4 block rounded-lg bg-accent px-5 py-3 text-center font-black">Donate Now</Link>
             </div>
           </div>
           <aside className="self-center rounded-lg border border-white/15 bg-white/10 p-6">
             <h3 className="font-display text-2xl font-black">Your Rs. 1000 can...</h3>
-            <ul className="mt-5 grid gap-3 text-white/85"><li>Provide study material to two students</li><li>Support one counselling session</li><li>Fund essential medicines at a health camp</li></ul>
+            <ul className="mt-5 grid gap-3 text-[#FFE1D2]"><li>Provide study material to two students</li><li>Support one counselling session</li><li>Fund essential medicines at a health camp</li></ul>
           </aside>
         </div>
       </section>
 
-      <section className="bg-accent px-5 py-14 text-foreground sm:px-8">
+      <section className="bg-accent px-5 py-14 text-white sm:px-8">
         <div className="mx-auto flex max-w-7xl flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <div>
             <h2 className="font-display text-4xl font-black">Join Our Mission</h2>
-            <p className="mt-2 text-foreground/75">Volunteer, mentor, or partner with us to create lasting change</p>
+            <p className="mt-2 text-white/85">Volunteer, mentor, or partner with us to create lasting change</p>
           </div>
           <div className="flex flex-col gap-3 sm:flex-row">
-            <Link href="/get-involved/volunteer" className="rounded-md border border-foreground px-5 py-3 text-center font-bold">Become a Volunteer</Link>
-            <Link href="/get-involved/mentor" className="rounded-md bg-foreground px-5 py-3 text-center font-bold text-white">Become a Mentor</Link>
+            <Link href="/get-involved/volunteer" className="rounded-md bg-white px-5 py-3 text-center font-bold">Become a Volunteer</Link>
+            <Link href="/get-involved/mentor" className="rounded-md border border-white px-5 py-3 text-center font-bold text-white">Become a Mentor</Link>
           </div>
         </div>
       </section>

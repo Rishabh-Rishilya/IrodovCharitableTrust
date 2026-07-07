@@ -13,7 +13,7 @@ export default function TaxBenefitsPage() {
         <div className="mt-10 grid gap-5 md:grid-cols-4">
           {["Donate", "Share PAN", "Verify payment", "Receive certificate"].map((step, index) => <div key={step} className="rounded-lg bg-surface p-5 text-center"><div className="mx-auto grid size-12 place-items-center rounded-full bg-primary font-black text-white">{index + 1}</div><p className="mt-3 font-bold text-primary">{step}</p></div>)}
         </div>
-        <p className="mt-8 rounded-lg border border-accent bg-accent/10 p-4 font-semibold text-primary">PAN is required for issuing an 80G tax exemption certificate.</p>
+        <p className="mt-8 rounded-lg border border-accent bg-accent/10 p-4 font-semibold text-white">PAN is required for issuing an 80G tax exemption certificate.</p>
         <div className="mt-10">{Array.from({ length: 5 }, (_, i) => <details key={i} className="mb-3 rounded-lg bg-white p-5 shadow-sm"><summary className="cursor-pointer font-bold text-primary">Tax benefit question {i + 1}</summary><p className="mt-3 text-muted">Placeholder answer about receipt, PAN, deduction eligibility, and timelines.</p></details>)}</div>
       </section>
     </main>

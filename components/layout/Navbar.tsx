@@ -42,7 +42,7 @@ const moreLinks = [
   ["Transparency", "/transparency"],
 ];
 
-const navLinkClass = "whitespace-nowrap transition-colors hover:text-[#1A3C6E]";
+const navLinkClass = "whitespace-nowrap text-[#2D4B32] transition-colors hover:text-[#FF6E41]";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -65,7 +65,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-gray-200 bg-white shadow-sm">
+    <header className="sticky top-0 z-40 border-b border-[#E6EB82] bg-white shadow-sm">
       <nav className="mx-auto flex h-24 w-full max-w-7xl items-center justify-between px-6 py-4">
         <Link href="/" className="flex flex-shrink-0 items-center gap-3">
           <Image
@@ -78,12 +78,12 @@ export default function Navbar() {
             unoptimized
           />
           <div className="hidden flex-col leading-tight md:flex">
-            <span className="font-serif text-2xl font-bold whitespace-nowrap text-[#1A3C6E]">IRODOV</span>
-            <span className="text-[15px] font-medium tracking-widest whitespace-nowrap text-[#6B7A99]">CHARITABLE TRUST</span>
+            <span className="font-serif text-2xl font-bold whitespace-nowrap text-[#2D4B32]">IRODOV</span>
+            <span className="text-[15px] font-medium tracking-widest whitespace-nowrap text-[#4A6B52]">CHARITABLE TRUST</span>
           </div>
         </Link>
 
-        <div className="hidden items-center gap-4 text-[14px] font-medium text-gray-700 lg:flex">
+        <div className="hidden items-center gap-4 text-[14px] font-medium text-[#2D4B32] lg:flex">
           <Link className={navLinkClass} href="/">Home</Link>
           <Dropdown label="About" open={aboutOpen} setOpen={setAboutOpen} menuRef={aboutRef}>
             {aboutLinks.map(([label, href]) => (
@@ -119,7 +119,7 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-3">
-          <Link href="/donate" className="whitespace-nowrap rounded-md bg-accent px-4 py-2 text-sm font-black text-foreground">
+          <Link href="/donate" className="whitespace-nowrap rounded-lg bg-accent px-4 py-2 text-sm font-black text-white transition-colors hover:bg-[#e55a30]">
             Donate Now
           </Link>
           <button className="rounded-md border border-primary/20 px-3 py-2 text-primary lg:hidden" onClick={() => setOpen(true)} aria-label="Open menu">
@@ -143,8 +143,8 @@ export default function Navbar() {
                   unoptimized
                 />
                 <div className="hidden flex-col leading-tight md:flex">
-                  <span className="font-serif text-2xl font-bold whitespace-nowrap text-[#1A3C6E]">IRODOV</span>
-                  <span className="text-[15px] font-medium tracking-widest whitespace-nowrap text-[#6B7A99]">CHARITABLE TRUST</span>
+                  <span className="font-serif text-2xl font-bold whitespace-nowrap text-[#2D4B32]">IRODOV</span>
+                  <span className="text-[15px] font-medium tracking-widest whitespace-nowrap text-[#4A6B52]">CHARITABLE TRUST</span>
                 </div>
               </Link>
               <button onClick={() => setOpen(false)} className="rounded-md border px-3 py-1" aria-label="Close menu">×</button>
@@ -194,7 +194,7 @@ function Dropdown({
 
 function MenuLink({ href, onClick, children }: { href: string; onClick: () => void; children: React.ReactNode }) {
   return (
-    <Link href={href} className="whitespace-nowrap rounded-md px-3 py-2 text-[15px] font-medium text-gray-700 transition-colors hover:bg-surface hover:text-[#1A3C6E]" onClick={onClick}>
+    <Link href={href} className="whitespace-nowrap rounded-md px-3 py-2 text-[15px] font-medium text-[#2D4B32] transition-colors hover:bg-surface-2 hover:text-[#FF6E41]" onClick={onClick}>
       {children}
     </Link>
   );

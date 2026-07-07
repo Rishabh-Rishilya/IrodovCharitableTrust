@@ -6,7 +6,7 @@ export default function PageHero({ title, subtitle, breadcrumbs }: { title: stri
   return (
     <section className="bg-primary text-white">
       <div className="mx-auto max-w-7xl px-5 py-14 sm:px-8">
-        <nav className="mb-5 flex flex-wrap gap-2 text-sm text-white/75">
+        <nav className="mb-5 flex flex-wrap gap-2 text-sm text-[#FFE1D2]">
           {breadcrumbs.map((crumb, index) => (
             <span key={crumb.label} className="flex items-center gap-2">
               {crumb.href ? <Link href={crumb.href} className="hover:text-accent">{crumb.label}</Link> : crumb.label}
@@ -15,7 +15,7 @@ export default function PageHero({ title, subtitle, breadcrumbs }: { title: stri
           ))}
         </nav>
         <h1 className="font-display text-4xl font-black leading-tight sm:text-5xl">{title}</h1>
-        {subtitle && <p className="mt-5 max-w-3xl text-lg leading-8 text-white/80">{subtitle}</p>}
+        {subtitle && <p className="mt-5 max-w-3xl text-lg leading-8 text-[#FFE1D2]">{subtitle}</p>}
       </div>
     </section>
   );

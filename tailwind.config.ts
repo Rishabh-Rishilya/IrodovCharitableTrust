@@ -4,12 +4,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#1A3C6E",
-        accent: "#E8A020",
-        surface: "#F7F9FC",
-        foreground: "#1C1C2E",
-        muted: "#6B7A99",
-        danger: "#C0392B",
+        primary: "#2D4B32",
+        accent: "#FF6E41",
+        surface: "#FFFFEB",
+        "surface-2": "#FFE1D2",
+        foreground: "#2D4B32",
+        muted: "#4A6B52",
+        danger: "#FF6E41",
       },
       fontFamily: {
         display: ["var(--font-merriweather)", "Georgia", "serif"],

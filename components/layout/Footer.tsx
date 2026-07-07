@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import Image from "next/image";
 
 const columns = [
@@ -90,15 +90,15 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-white/15 px-5 py-5 text-xs text-white/70 sm:px-8">
+      <div className="bg-[#1A3320] px-5 py-5 text-xs text-white/70 sm:px-8">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
-          <p>© 2024 IRODOV Charitable Trust. All rights reserved.</p>
+          <p>(c) 2024 IRODOV Charitable Trust. All rights reserved.</p>
           <div className="flex flex-wrap gap-x-3 gap-y-2">
-            <Link href="#">Privacy Policy</Link>
-            <Link href="#">Terms & Conditions</Link>
-            <Link href="#">Refund Policy</Link>
-            <Link href="#">Donation Policy</Link>
-            <Link href="#">Cookie Policy</Link>
+            <Link href="#" className="hover:text-accent">Privacy Policy</Link>
+            <Link href="#" className="hover:text-accent">Terms & Conditions</Link>
+            <Link href="#" className="hover:text-accent">Refund Policy</Link>
+            <Link href="#" className="hover:text-accent">Donation Policy</Link>
+            <Link href="#" className="hover:text-accent">Cookie Policy</Link>
           </div>
         </div>
         <p className="mx-auto mt-3 max-w-7xl text-white/60">
@@ -113,7 +113,7 @@ function FooterLinks({ items }: { items: string[][] }) {
   return (
     <div className="mt-4 grid gap-2 text-sm text-white/75">
       {items.map(([label, href]) => (
-        <Link key={href} href={href} className="hover:text-white">
+        <Link key={href} href={href} className="hover:text-accent">
           {label}
         </Link>
       ))}

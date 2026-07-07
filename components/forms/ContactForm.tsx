@@ -6,7 +6,7 @@ export default function ContactForm({ title = "Send an Inquiry" }: { title?: str
       <input className="rounded-md border border-primary/15 px-4 py-3" placeholder="Email" />
       <input className="rounded-md border border-primary/15 px-4 py-3" placeholder="Phone or Subject" />
       <textarea className="min-h-32 rounded-md border border-primary/15 px-4 py-3" placeholder="Message" />
-      <button type="button" className="rounded-md bg-accent px-5 py-3 font-black text-foreground">Submit</button>
+      <button type="button" className="rounded-md bg-accent px-5 py-3 font-black text-white">Submit</button>
     </form>
   );
 }

@@ -21,7 +21,7 @@ export default function GovernancePage() {
           <div>
             <h2 className="font-display text-3xl font-black text-primary">Financial Accountability</h2>
             <p className="mt-4 leading-7 text-muted">IRODOV maintains documented approvals, periodic review, audit trails, and public reporting for all major program and donation flows.</p>
-            <Link href="/transparency" className="mt-5 inline-block rounded-md bg-primary px-5 py-3 font-bold text-white">View Transparency Portal</Link>
+            <Link href="/transparency" className="mt-5 inline-block rounded-md bg-accent px-5 py-3 font-bold text-white">View Transparency Portal</Link>
             <h3 className="mt-8 font-display text-2xl font-black text-primary">Policies</h3>
             <div className="mt-4 grid gap-3">{["Safeguarding Policy", "Donation Policy", "Refund Policy", "Volunteer Policy", "Conflict of Interest Policy"].map((p) => <button key={p} className="rounded-md border border-primary px-4 py-2 text-left font-bold text-primary">{p}</button>)}</div>
           </div>
