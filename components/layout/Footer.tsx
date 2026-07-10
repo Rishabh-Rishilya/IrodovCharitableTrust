@@ -1,43 +1,49 @@
-﻿import Link from "next/link";
-import Image from "next/image";
+﻿"use client";
 
-const columns = [
-  {
-    title: "Our Programs",
-    links: [
-      ["Mental Health & Wellness", "/programs/mental-health"],
-      ["Education", "/programs/education"],
-      ["Scholarships", "/programs/scholarships"],
-      ["Healthcare", "/programs/healthcare"],
-      ["Social Welfare", "/programs/social-welfare"],
-      ["Skill Development", "/programs/skill-development"],
-    ],
-  },
-  {
-    title: "Quick Links",
-    links: [
-      ["About Us", "/about"],
-      ["Vision & Mission", "/vision-mission"],
-      ["Projects", "/projects"],
-      ["Research Centre", "/research"],
-      ["Transparency", "/transparency"],
-      ["Annual Reports", "/about/annual-reports"],
-    ],
-  },
-  {
-    title: "Get Involved",
-    links: [
-      ["Become a Volunteer", "/get-involved/volunteer"],
-      ["Become a Mentor", "/get-involved/mentor"],
-      ["Donate Now", "/donate"],
-      ["Corporate CSR", "/donate/csr"],
-      ["Careers", "/careers"],
-      ["Events", "/events"],
-    ],
-  },
-];
+import Link from "next/link";
+import Image from "next/image";
+import NewsletterSignup from "@/components/layout/NewsletterSignup";
+import { useLanguage } from "@/lib/LanguageContext";
 
 export default function Footer() {
+  const { language } = useLanguage();
+
+  const columns = [
+    {
+      title: language === "hi" ? "हमारे कार्यक्रम" : "Our Programs",
+      links: [
+        ["Mental Health & Wellness", "/programs/mental-health"],
+        ["Education", "/programs/education"],
+        ["Scholarships", "/programs/scholarships"],
+        ["Healthcare", "/programs/healthcare"],
+        ["Social Welfare", "/programs/social-welfare"],
+        ["Skill Development", "/programs/skill-development"],
+      ],
+    },
+    {
+      title: language === "hi" ? "त्वरित लिंक" : "Quick Links",
+      links: [
+        ["About Us", "/about"],
+        ["Vision & Mission", "/vision-mission"],
+        ["Projects", "/projects"],
+        ["Research Centre", "/research"],
+        ["Transparency", "/transparency"],
+        ["Annual Reports", "/about/annual-reports"],
+      ],
+    },
+    {
+      title: language === "hi" ? "जुड़ें" : "Get Involved",
+      links: [
+        ["Become a Volunteer", "/get-involved/volunteer"],
+        ["Become a Mentor", "/get-involved/mentor"],
+        ["Donate Now", "/donate"],
+        ["Corporate CSR", "/donate/csr"],
+        ["Careers", "/careers"],
+        ["Events", "/events"],
+      ],
+    },
+  ];
+
   return (
     <footer className="bg-primary text-white">
       <div className="mx-auto grid max-w-7xl gap-8 px-5 py-12 sm:px-8 lg:grid-cols-5">
@@ -48,12 +54,12 @@ export default function Footer() {
               alt="IRODOV Charitable Trust"
               width={40}
               height={40}
-              className="h-10 w-auto object-contain"
+              className="h-8 w-auto object-contain"
               unoptimized
             />
             <div className="flex flex-col leading-tight">
               <span className="font-serif text-lg font-bold whitespace-nowrap text-white">IRODOV</span>
-              <span className="text-[11px] font-medium tracking-wide whitespace-nowrap text-white/75">CHARITABLE TRUST</span>
+              <span className="whitespace-nowrap text-[13px] font-medium tracking-wide text-white/75">CHARITABLE TRUST</span>
             </div>
           </div>
           <h2 className="font-display text-xl font-black">IRODOV Charitable Trust</h2>
@@ -67,6 +73,7 @@ export default function Footer() {
             <span>YouTube</span>
             <span>LinkedIn</span>
           </div>
+          <NewsletterSignup compact />
         </div>
 
         {columns.map((column) => (
@@ -77,7 +84,7 @@ export default function Footer() {
         ))}
 
         <div>
-          <h3 className="font-bold text-accent">Contact Us</h3>
+          <h3 className="font-bold text-accent">{language === "hi" ? "संपर्क करें" : "Contact Us"}</h3>
           <p className="mt-4 text-sm leading-7 text-white/75">
             New Delhi, India
             <br />

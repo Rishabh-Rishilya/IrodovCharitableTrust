@@ -1,4 +1,9 @@
 import PageHero from "@/components/ui/PageHero";
+
+export const metadata = {
+  title: "Transparency",
+  description: "View reports, registrations, governance details, and accountability documents.",
+};
 import { docs } from "@/lib/data";
 
 export default function TransparencyPage() {
