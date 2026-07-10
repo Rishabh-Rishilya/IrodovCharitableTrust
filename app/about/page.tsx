@@ -19,13 +19,13 @@ export default function AboutPage() {
   return (
     <main>
       <PageHero
-        title={language === "hi" ? "????? ???? ???" : "About IRODOV Charitable Trust"}
+        title={language === "hi" ? "IRODOV चैरिटेबल ट्रस्ट के बारे में" : "About IRODOV Charitable Trust"}
         subtitle={
           language === "hi"
-            ? "???-?????, ???-????????? ????????? ???? ?? ??? ??????? ?? ????????? ???? ?? ??? ???????"
+            ? "राष्ट्रीय स्तर पर एक दान संस्था जो पारदर्शी, बहु-क्षेत्रीय जनसेवा के लिए निर्मित है।"
             : "A national-level charitable institution built for transparent, multi-sector public service."
         }
-        breadcrumbs={[{ label: "Home", href: "/" }, { label: language === "hi" ? "????? ???? ???" : "About" }]}
+        breadcrumbs={[{ label: "Home", href: "/" }, { label: language === "hi" ? "बारे में" : "About" }]}
       />
       <section className="mx-auto max-w-7xl px-5 py-12 sm:px-8">
         <div className="flex flex-wrap gap-3">
@@ -42,11 +42,11 @@ export default function AboutPage() {
               The name IRODOV represents disciplined learning, scientific curiosity, and a deep respect for human potential. The trust carries that spirit into education, mental wellness, research, and social welfare.
             </p>
             <blockquote className="mt-6 border-l-4 border-accent pl-5 font-display text-2xl font-bold text-primary">
-              �A society rises when knowledge, care, and opportunity are shared without discrimination.�
+              "A society rises when knowledge, care, and opportunity are shared without discrimination."
             </blockquote>
           </div>
           <div>
-            <h2 className="font-display text-3xl font-black text-primary">{language === "hi" ? "????? ??????" : "Our History"}</h2>
+            <h2 className="font-display text-3xl font-black text-primary">{language === "hi" ? "हमारा इतिहास" : "Our History"}</h2>
             <div className="mt-5 space-y-4">
               {[
                 "2018 - Foundation vision formed",
@@ -63,7 +63,7 @@ export default function AboutPage() {
           </div>
         </div>
         <div className="mt-12 rounded-lg bg-surface p-6">
-          <h2 className="font-display text-3xl font-black text-primary">{language === "hi" ? "??????? ?????" : "Registration Details"}</h2>
+          <h2 className="font-display text-3xl font-black text-primary">{language === "hi" ? "पंजीकरण विवरण" : "Registration Details"}</h2>
           <table className="mt-6 w-full overflow-hidden rounded-lg bg-white text-sm shadow-sm">
             <tbody>
               {[

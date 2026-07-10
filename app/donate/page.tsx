@@ -14,7 +14,7 @@ export default function DonatePage() {
         title={isHindi ? "दान" : "Donate"}
         subtitle={
           isHindi
-            ? "शिक्षा, स्वास्थ्य, मानसिक कल्याण, सहायता और समुदाय की resilencia के लिए योगदान दें।"
+            ? "शिक्षा, स्वास्थ्य, मानसिक कल्याण, सहायता और समुदाय की स्थिरता के लिए योगदान दें।"
             : "Support education, health, mental wellness, relief, and community resilience."
         }
         breadcrumbs={[{ label: isHindi ? "होम" : "Home", href: "/" }, { label: isHindi ? "दान" : "Donate" }]}
