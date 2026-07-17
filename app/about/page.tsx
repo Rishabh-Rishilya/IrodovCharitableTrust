@@ -30,7 +30,7 @@ export default function AboutPage() {
       <section className="mx-auto max-w-7xl px-5 py-12 sm:px-8">
         <div className="flex flex-wrap gap-3">
           {subnav.map(([label, href]) => (
-            <Link key={href} href={href} className="rounded-full bg-white px-4 py-2 text-sm font-bold text-primary shadow-sm ring-1 ring-primary/10">
+            <Link key={href} href={href} className="rounded-full bg-white px-4 py-2 text-sm font-bold text-primary shadow-sm ring-1 ring-border">
               {label}
             </Link>
           ))}
@@ -42,7 +42,7 @@ export default function AboutPage() {
               The name IRODOV represents disciplined learning, scientific curiosity, and a deep respect for human potential. The trust carries that spirit into education, mental wellness, research, and social welfare.
             </p>
             <blockquote className="mt-6 border-l-4 border-accent pl-5 font-display text-2xl font-bold text-primary">
-              "A society rises when knowledge, care, and opportunity are shared without discrimination."
+              &ldquo;A society rises when knowledge, care, and opportunity are shared without discrimination.&rdquo;
             </blockquote>
           </div>
           <div>
@@ -74,7 +74,7 @@ export default function AboutPage() {
                 ["CSR Eligibility", "Eligible"],
                 ["Registered Office", "New Delhi, India"],
               ].map(([k, v]) => (
-                <tr key={k} className="border-b border-gray-100">
+                <tr key={k} className="border-b border-border">
                   <td className="p-4 font-bold text-primary">{k}</td>
                   <td className="p-4 text-muted">{v}</td>
                 </tr>

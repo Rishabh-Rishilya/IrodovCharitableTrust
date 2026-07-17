@@ -9,7 +9,7 @@ export default function ReceiptPage() {
           Print Receipt
         </button>
       </div>
-      <div className="mt-8 overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-primary/10 print:shadow-none">
+      <div className="mt-8 overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-border print:shadow-none">
         <table className="w-full text-sm">
           <tbody>
             {[
@@ -20,7 +20,7 @@ export default function ReceiptPage() {
               ["Date", "10 July 2026"],
               ["Payment Mode", "Online"],
             ].map(([key, value]) => (
-              <tr key={key} className="border-b border-gray-100">
+              <tr key={key} className="border-b border-border">
                 <td className="p-4 font-bold text-primary">{key}</td>
                 <td className="p-4 text-muted">{value}</td>
               </tr>

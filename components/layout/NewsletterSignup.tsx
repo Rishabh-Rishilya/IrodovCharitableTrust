@@ -15,7 +15,7 @@ export default function NewsletterSignup({ compact = false }: { compact?: boolea
   if (compact) {
     return (
       <div className="mt-5">
-        <p className="text-sm font-bold text-white">{language === "hi" ? "न्यूज़लेटर सदस्यता" : "Subscribe to Newsletter"}</p>
+        <p className="text-sm font-bold text-[#1F2937]">{language === "hi" ? "न्यूज़लेटर सदस्यता" : "Subscribe to Newsletter"}</p>
         <div className="mt-2 flex gap-2">
           <input
             value={email}
@@ -33,22 +33,22 @@ export default function NewsletterSignup({ compact = false }: { compact?: boolea
   }
 
   return (
-    <section className="bg-primary px-5 py-14 text-white sm:px-8">
+    <section className="bg-surface-3 px-5 py-14 text-foreground sm:px-8">
       <div className="mx-auto max-w-7xl">
-        <h2 className="font-display text-4xl font-black">Stay Connected with IRODOV</h2>
-        <p className="mt-3 max-w-2xl text-[#FFE1D2]">Get updates on our programs, events, and impact stories delivered to your inbox</p>
+        <h2 className="font-display text-4xl font-black text-primary">Stay Connected with IRODOV</h2>
+        <p className="mt-3 max-w-2xl text-muted">Get updates on our programs, events, and impact stories delivered to your inbox</p>
         <div className="mt-6 flex max-w-2xl flex-col gap-3 sm:flex-row">
           <input
             value={email}
             onChange={(event) => setEmail(event.target.value)}
-            className="flex-1 rounded-lg border border-white/20 bg-white px-4 py-3 text-primary"
+            className="flex-1 rounded-lg border border-border bg-white px-4 py-3 text-foreground"
             placeholder="Enter your email"
           />
-          <button type="button" onClick={submit} className="rounded-lg bg-accent px-6 py-3 font-black text-white">
+          <button type="button" onClick={submit} className="rounded-lg bg-[#FF6B35] px-6 py-3 font-black text-white transition-colors hover:bg-[#e55a2b]">
             Subscribe
           </button>
         </div>
-        <p className="mt-3 text-sm text-white/70">We respect your privacy. Unsubscribe anytime.</p>
+        <p className="mt-3 text-sm text-muted">We respect your privacy. Unsubscribe anytime.</p>
         {done && <p className="mt-4 font-bold text-accent">You are subscribed. Thank you.</p>}
       </div>
     </section>

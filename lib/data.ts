@@ -135,4 +135,4 @@ export const docs = [
 ];
 
 export const placeholder = (text: string, size = "800x520") =>
-  `https://placehold.co/${size}/2D4B32/FFFFFF/png?text=${encodeURIComponent(text)}`;
+  `https://placehold.co/${size}/1E5FA8/FFFFFF/png?text=${encodeURIComponent(text)}`;

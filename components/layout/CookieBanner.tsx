@@ -22,14 +22,14 @@ export default function CookieBanner() {
   if (!visible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-[60] flex flex-col items-center justify-between gap-4 bg-[#2D4B32] px-6 py-4 text-white shadow-2xl md:flex-row">
+    <div className="fixed bottom-0 left-0 right-0 z-[60] flex flex-col items-center justify-between gap-4 border-t border-border bg-white px-6 py-4 text-foreground shadow-2xl md:flex-row">
       <p className="text-center text-sm md:text-left">
         We use cookies to improve your experience on our website. By continuing to browse, you agree to our{" "}
-        <a href="/privacy-policy" className="text-[#FF6E41] underline">Cookie Policy</a>.
+        <a href="/privacy-policy" className="text-accent underline">Cookie Policy</a>.
       </p>
       <div className="flex flex-shrink-0 gap-3">
-        <button onClick={() => choose("declined")} className="rounded-lg border border-white px-4 py-2 text-sm text-white transition-colors hover:bg-white hover:text-[#2D4B32]">Decline</button>
-        <button onClick={() => choose("accepted")} className="rounded-lg bg-[#FF6E41] px-4 py-2 text-sm text-white transition-colors hover:bg-[#e55a30]">Accept All</button>
+        <button onClick={() => choose("declined")} className="rounded-lg border border-border px-4 py-2 text-sm text-muted transition-colors hover:border-primary hover:text-primary">Decline</button>
+        <button onClick={() => choose("accepted")} className="rounded-lg bg-accent px-4 py-2 text-sm text-white transition-colors hover:bg-[#e55a30]">Accept All</button>
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import { placeholder } from "@/lib/data";
 
 export default function NewsCard({ date, title }: { date: string; title: string }) {
   return (
-    <article className="overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-primary/10">
+    <article className="overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-border">
       <Image src={placeholder(title, "700x420")} alt="" width={700} height={420} className="h-44 w-full object-cover" />
       <div className="p-5">
         <p className="text-xs font-bold uppercase tracking-wide text-muted">{date}</p>

@@ -9,14 +9,14 @@ export default function VisionMissionPage() {
     <main>
       <PageHero title="Vision & Mission" breadcrumbs={[{ label: "Home", href: "/" }, { label: "Vision & Mission" }]} />
       <section className="mx-auto max-w-7xl px-5 py-16 sm:px-8">
-        <div className="rounded-lg bg-primary p-8 text-white">
+        <div className="rounded-lg bg-[#F5EFE0] p-8 text-primary shadow-sm ring-1 ring-[#E5D9C3]">
           <p className="font-display text-4xl font-black leading-tight">
             To build an inclusive society where every individual has access to education, mental health support, healthcare, and opportunities for holistic development.
           </p>
         </div>
         <h2 className="mt-12 font-display text-3xl font-black text-primary">Mission Pillars</h2>
         <div className="mt-6 grid gap-5 md:grid-cols-3">
-          {pillars.map((pillar) => <div key={pillar} className="rounded-lg bg-white p-6 shadow-sm ring-1 ring-primary/10"><p className="text-2xl text-accent">◆</p><h3 className="mt-3 font-display text-xl font-black text-primary">{pillar}</h3></div>)}
+          {pillars.map((pillar) => <div key={pillar} className="rounded-lg bg-white p-6 shadow-sm ring-1 ring-[#E5D9C3]"><p className="text-2xl text-accent">◆</p><h3 className="mt-3 font-display text-xl font-black text-primary">{pillar}</h3></div>)}
         </div>
         <h2 className="mt-12 font-display text-3xl font-black text-primary">Long-term Goals</h2>
         <ol className="mt-6 grid gap-3 text-muted">
@@ -24,7 +24,7 @@ export default function VisionMissionPage() {
         </ol>
         <h2 className="mt-12 font-display text-3xl font-black text-primary">Strategic Roadmap</h2>
         <div className="mt-6 flex gap-4 overflow-x-auto pb-3">
-          {roadmap.map((item) => <div key={item} className="min-w-56 rounded-lg bg-white p-5 text-center font-bold text-primary shadow-sm ring-1 ring-primary/10">{item}</div>)}
+          {roadmap.map((item) => <div key={item} className="min-w-56 rounded-lg bg-white p-5 text-center font-bold text-primary shadow-sm ring-1 ring-border">{item}</div>)}
         </div>
         <h2 className="mt-12 font-display text-3xl font-black text-primary">SDG Alignment</h2>
         <div className="mt-6 grid gap-4 sm:grid-cols-3 lg:grid-cols-6">

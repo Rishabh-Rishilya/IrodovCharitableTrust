@@ -17,7 +17,7 @@ export default function ProjectsPage() {
         <div className="flex flex-wrap gap-2">{tabs.map((item) => <button key={item} onClick={() => setTab(item)} className={`rounded-md px-4 py-2 font-bold ${tab === item ? "bg-accent text-white" : "bg-white text-primary"}`}>{item}</button>)}</div>
         <div className={`mt-8 grid gap-5 ${tab === "Flagship" ? "lg:grid-cols-2" : "md:grid-cols-2 lg:grid-cols-3"}`}>
           {Array.from({ length: count }, (_, i) => (
-            <article key={i} className="overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-primary/10">
+            <article key={i} className="overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-border">
               <Image src={placeholder(`${tab} Project ${i + 1}`, "400x200")} alt="" width={400} height={200} className={`${tab === "Flagship" ? "h-64" : "h-44"} w-full object-cover`} />
               <div className="p-5">
                 <div className="flex flex-wrap gap-2 text-xs font-bold"><span className="rounded-full bg-primary/10 px-3 py-1 text-primary">New Delhi</span><span className="rounded-full bg-accent/20 px-3 py-1 text-white">{tab === "Upcoming" ? "Starting Soon" : tab === "Completed" ? "Completed" : "Education"}</span></div>

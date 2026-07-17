@@ -13,7 +13,7 @@ export default function ContactPage() {
       <PageHero title={isHindi ? "संपर्क" : "Contact"} breadcrumbs={[{ label: isHindi ? "होम" : "Home", href: "/" }, { label: isHindi ? "संपर्क" : "Contact" }]} />
       <section className="mx-auto grid max-w-7xl gap-8 px-5 py-16 sm:px-8 lg:grid-cols-2">
         <ContactForm title={isHindi ? "संपर्क फ़ॉर्म" : "Contact Form"} />
-        <div className="rounded-lg bg-white p-6 shadow-sm ring-1 ring-primary/10">
+        <div className="rounded-lg bg-white p-6 shadow-sm ring-1 ring-border">
           <h2 className="font-display text-2xl font-black text-primary">IRODOV Charitable Trust</h2>
           <p className="mt-4 leading-7 text-muted">
             {isHindi ? "पंजीकृत कार्यालय: नई दिल्ली, भारत" : "Registered Office: New Delhi, India"}

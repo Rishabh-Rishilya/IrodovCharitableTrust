@@ -9,21 +9,21 @@ export default function PageHero({ title, subtitle, breadcrumbs }: { title: stri
   const { language } = useLanguage();
 
   return (
-    <section className="bg-primary text-white">
+    <section className="bg-surface text-foreground">
       <div className="mx-auto max-w-7xl px-5 py-14 sm:px-8">
-        <nav className="mb-5 flex flex-wrap gap-2 text-sm text-[#FFE1D2]">
+        <nav className="mb-5 flex flex-wrap gap-2 text-sm text-muted">
           {breadcrumbs.map((crumb, index) => {
             const label = crumb.label === "Home" ? (language === "hi" ? "होम" : "Home") : crumb.label;
             return (
               <span key={`${crumb.label}-${index}`} className="flex items-center gap-2">
-                {crumb.href ? <Link href={crumb.href} className="hover:text-accent">{label}</Link> : label}
-                {index < breadcrumbs.length - 1 && <span>/</span>}
+                {crumb.href ? <Link href={crumb.href} className="hover:text-accent">{label}</Link> : <span className="text-accent">{label}</span>}
+                {index < breadcrumbs.length - 1 && <span className="text-border">/</span>}
               </span>
             );
           })}
         </nav>
         <h1 className="font-display text-2xl font-black leading-tight sm:text-5xl">{title}</h1>
-        {subtitle && <p className="mt-5 max-w-3xl text-lg leading-8 text-[#FFE1D2]">{subtitle}</p>}
+        {subtitle && <p className="mt-5 max-w-3xl text-lg leading-8 text-muted">{subtitle}</p>}
       </div>
     </section>
   );

@@ -44,7 +44,7 @@ export default function DonatePage() {
             <h2 className="font-bold text-primary">{isHindi ? "हाल के दाता" : "Recent Donors"}</h2>
             <p className="mt-3 text-sm text-muted">Anita ₹2500 • Rahul ₹1000 • Priya ₹5000</p>
           </div>
-          <a href="/donate/receipt" className="block rounded-lg border border-primary px-4 py-3 text-center font-bold text-primary">
+          <a href="/donate/receipt" className="block rounded-lg border border-primary px-4 py-3 text-center font-bold text-primary transition hover:bg-primary hover:text-white">
             {isHindi ? "नमूना रसीद देखें" : "View Sample Receipt"}
           </a>
         </aside>
