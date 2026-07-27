@@ -1,12 +1,17 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useLanguage } from "@/lib/LanguageContext";
 
 export default function NewsletterSignup({ compact = false }: { compact?: boolean }) {
   const [email, setEmail] = useState("");
   const [done, setDone] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const { language } = useLanguage();
+
+  useEffect(() => setMounted(true), []);
+
+  if (!mounted) return null;
 
   const submit = () => {
     if (email.trim()) setDone(true);

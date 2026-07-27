@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import DonationAmountPicker from "@/components/ui/DonationAmountPicker";
 import { useLanguage } from "@/lib/LanguageContext";
 
@@ -43,9 +43,34 @@ export default function DonationForm() {
           ))}
         </div>
         <div className="mt-5 rounded-lg bg-surface p-5">
-          {tab === "upi" && <div><div className="rounded-md bg-white p-4 font-bold text-primary">UPI ID: irodovtrust@upi <button type="button" className="ml-3 text-accent">{isHindi ? "कॉपी" : "Copy"}</button></div><div className="mt-4 grid size-40 place-items-center rounded-md bg-white text-xs text-muted">{isHindi ? "क्यूआर प्लेसहोल्डर" : "QR Placeholder"}</div><p className="mt-4 text-sm text-muted">{isHindi ? "क्यूआर स्कैन करें या यूपीआई आईडी कॉपी करें, अपने यूपीआई ऐप में भुगतान पूरा करें, फिर नीचे संदर्भ संख्या दर्ज करें।" : "Scan QR or copy UPI ID, complete payment in your UPI app, then enter reference number below."}</p><input className="mt-4 w-full rounded-md border px-4 py-3" placeholder={isHindi ? "संदर्भ संख्या" : "Reference Number"} /><button type="button" className="mt-4 rounded-md bg-accent px-5 py-3 font-black">{isHindi ? "मैं भुगतान पूरा कर चुका हूँ" : "I have completed the payment"}</button></div>}
-          {tab === "bank" && <div><table className="w-full text-sm"><tbody>{([[isHindi ? "खाता नाम" : "Account Name", "IRODOV Charitable Trust"], [isHindi ? "खाता संख्या" : "Account Number", "000000000000"], [isHindi ? "आईएफएससी कोड" : "IFSC Code", "BANK0001234"], [isHindi ? "बैंक का नाम" : "Bank Name", "National Bank"], [isHindi ? "शाखा" : "Branch", "New Delhi"]]).map(([k,v]) => <tr key={k} className="border-b"><td className="py-3 font-bold">{k}</td><td>{v}</td></tr>)}</tbody></table><button type="button" className="mt-4 rounded-md border border-primary px-4 py-2 font-bold text-primary transition hover:bg-primary hover:text-white">{isHindi ? "सभी विवरण कॉपी करें" : "Copy All Details"}</button><input className="mt-4 w-full rounded-md border px-4 py-3" placeholder={isHindi ? "संदर्भ संख्या" : "Reference Number"} /><button type="button" className="mt-4 rounded-md bg-accent px-5 py-3 font-black">{isHindi ? "जमा करें" : "Submit"}</button></div>}
-          {tab === "online" && <div><span className="rounded-full bg-surface-2 px-3 py-1 text-xs font-bold text-accent">{isHindi ? "जल्द आ रहा है" : "Coming Soon"}</span><p className="mt-4 font-bold">{isHindi ? "ऑनलाइन भुगतान गेटवे जल्द उपलब्ध होगा।" : "Online payment gateway coming soon."}</p><div className="mt-4 flex gap-2"><input className="flex-1 rounded-md border px-4 py-3" placeholder="Email" /><button type="button" className="rounded-md bg-accent px-4 py-3 font-bold text-white">{isHindi ? "मुझे सूचित करें" : "Notify Me"}</button></div></div>}
+          {tab === "upi" && <div><div className="rounded-md bg-white p-4 font-bold text-primary">UPI ID: irodovtrust@upi <button type="button" className="ml-3 text-accent">{isHindi ? "कॉपी" : "Copy"}</button></div><div className="mt-4 grid size-40 place-items-center rounded-md bg-white text-xs text-muted">{isHindi ? "क्यूआर प्लेसहोल्डर" : "QR Placeholder"}</div><p className="mt-4 text-sm text-muted">{isHindi ? "क्यूआर स्कैन करें या यूपीआई आईडी कॉपी करें, अपने यूपीआई ऐप में भुगतान पूरा करें, फिर नीचे संदर्भ संख्या दर्ज करें।" : "Scan QR or copy UPI ID, complete payment in your UPI app, then enter reference number below."}</p><input className="mt-4 w-full rounded-md border px-4 py-3" placeholder={isHindi ? "संदर्भ संख्या" : "Reference Number"} /><button type="button" className="mt-4 rounded-md bg-accent px-5 py-3 font-black text-white">{isHindi ? "मैं भुगतान पूरा कर चुका हूँ" : "I have completed the payment"}</button></div>}
+          {tab === "bank" && <div><table className="w-full text-sm"><tbody>{([[isHindi ? "खाता नाम" : "Account Name", "IRODOV Charitable Trust"], [isHindi ? "खाता संख्या" : "Account Number", "000000000000"], [isHindi ? "आईएफएससी कोड" : "IFSC Code", "BANK0001234"], [isHindi ? "बैंक का नाम" : "Bank Name", "National Bank"], [isHindi ? "शाखा" : "Branch", "New Delhi"]]).map(([k, v]) => <tr key={k} className="border-b"><td className="py-3 font-bold">{k}</td><td>{v}</td></tr>)}</tbody></table><button type="button" className="mt-4 rounded-md border border-primary px-4 py-2 font-bold text-primary transition hover:bg-primary hover:text-white">{isHindi ? "सभी विवरण कॉपी करें" : "Copy All Details"}</button><input className="mt-4 w-full rounded-md border px-4 py-3" placeholder={isHindi ? "संदर्भ संख्या" : "Reference Number"} /><button type="button" className="mt-4 rounded-md bg-accent px-5 py-3 font-black text-white">{isHindi ? "मैं भुगतान पूरा कर चुका हूँ" : "I have completed the payment"}</button></div>}
+          {tab === "online" && <div>
+            <span className="rounded-full bg-surface-2 px-3 py-1 text-xs font-bold text-accent">{isHindi ? "जल्द आ रहा है" : "Coming Soon"}</span>
+            <p className="mt-4 font-bold text-primary">{isHindi ? "ऑनलाइन भुगतान गेटवे जल्द उपलब्ध होगा।" : "Online payment gateway coming soon."}</p>
+            <div className="mt-4 flex gap-2">
+              <input
+                className="flex-1 rounded-md border px-4 py-3"
+                placeholder="Email"
+                id="notify-email"
+              />
+              <button
+                type="button"
+                className="rounded-md bg-accent px-4 py-3 font-bold text-white"
+                onClick={() => {
+                  const input = document.getElementById('notify-email') as HTMLInputElement;
+                  if (input && input.value.trim()) {
+                    alert('Thank you! We will notify you when online payment is available.');
+                    input.value = '';
+                  } else {
+                    alert('Please enter your email address.');
+                  }
+                }}
+              >
+                {isHindi ? "मुझे सूचित करें" : "Notify Me"}
+              </button>
+            </div>
+          </div>}
         </div>
       </section>
     </form>

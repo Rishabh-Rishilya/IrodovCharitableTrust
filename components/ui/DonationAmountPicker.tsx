@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function DonationAmountPicker() {
   const amounts = ["₹500", "₹1000", "₹2500", "₹5000", "₹10000"];

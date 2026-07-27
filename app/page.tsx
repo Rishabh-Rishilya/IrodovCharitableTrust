@@ -7,7 +7,7 @@ import VideoSection from "@/components/home/VideoSection";
 import TestimonialsCarousel from "@/components/ui/TestimonialsCarousel";
 import AccentButton from "@/components/ui/AccentButton";
 import { useLanguage } from "@/lib/LanguageContext";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Home() {
   const { language } = useLanguage();

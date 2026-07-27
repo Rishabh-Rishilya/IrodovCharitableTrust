@@ -49,14 +49,7 @@ export default function Footer() {
       <div className="mx-auto grid max-w-7xl gap-8 px-5 py-12 sm:px-8 lg:grid-cols-5">
         <div>
           <div className="mb-4 flex flex-col items-start gap-2">
-            <Image
-              src="/logo.png"
-              alt="IRODOV Charitable Trust"
-              width={40}
-              height={40}
-              className="h-8 w-auto object-contain"
-              unoptimized
-            />
+            <Image src="/logo.png" alt="IRODOV Charitable Trust" width={40} height={40} className="h-8 w-auto object-contain" unoptimized />
             <div className="flex flex-col leading-tight">
               <span className="font-serif text-lg font-bold whitespace-nowrap text-[#1E5FA8]">IRODOV</span>
               <span className="whitespace-nowrap text-xs tracking-widest text-[#666666]">CHARITABLE TRUST</span>
@@ -85,12 +78,9 @@ export default function Footer() {
         <div>
           <h3 className="text-[#1E5FA8] font-bold text-base">{language === "hi" ? "संपर्क करें" : "Contact Us"}</h3>
           <p className="mt-4 text-sm leading-7 text-[#2D2D2D]">
-            New Delhi, India
-            <br />
-            +91-XXXXX-XXXXX
-            <br />
-            info@irodovtrust.org
-            <br />
+            New Delhi, India<br />
+            +91-XXXXX-XXXXX<br />
+            info@irodovtrust.org<br />
             Mon-Sat, 9AM - 6PM
           </p>
         </div>
@@ -98,7 +88,19 @@ export default function Footer() {
 
       <div className="border-t border-[#E5D9C3] bg-[#F5EFE0] px-5 py-5 text-xs text-[#1E5FA8]/70 sm:px-8">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
-          <p>(c) 2024 IRODOV Charitable Trust. All rights reserved.</p>
+          <div className="flex flex-col gap-3">
+            <p>(c) 2024 IRODOV Charitable Trust. All rights reserved.</p>
+            <div className="flex items-center gap-3 bg-white rounded-full px-5 py-2.5 shadow-sm border border-[#E5D9C3] w-fit">
+              <span className="text-[10px] tracking-widest text-[#999999] uppercase font-medium">Designed by</span>
+              <div className="flex items-center gap-2">
+                <Image src="/rishilya-logo.png" alt="Rishilya IT Solutions" width={28} height={28} className="h-7 w-auto object-contain" unoptimized />
+                <div className="flex flex-col leading-tight">
+                  <span className="font-black text-sm tracking-wider text-[#1B4332]">RISHILYA</span>
+                  <span className="text-[9px] tracking-widest text-[#666666] uppercase">IT SOLUTIONS</span>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="flex flex-wrap gap-x-3 gap-y-2">
             <Link href="#" className="hover:text-accent">Privacy Policy</Link>
             <Link href="#" className="hover:text-accent">Terms & Conditions</Link>
@@ -119,7 +121,7 @@ function FooterLinks({ items }: { items: string[][] }) {
   return (
     <div className="mt-4 grid gap-2 text-sm text-[#2D2D2D]">
       {items.map(([label, href]) => (
-        <Link key={href} href={href} className="text-sm text-[#2D2D2D] hover:text-[#FF6B35]">
+        <Link key={href} href={href} className="text-sm !text-[#2D2D2D] hover:!text-[#FF6B35]">
           {label}
         </Link>
       ))}

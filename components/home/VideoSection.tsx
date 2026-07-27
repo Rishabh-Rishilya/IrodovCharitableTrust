@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const videos = [
   ["Mental Health Camp 2024 - Reaching Rural Communities", "4:32", "Mental+Health+Camp"],
