@@ -33,10 +33,10 @@ export default function TestimonialsCarousel() {
             {visible.map(([quote, name, role]) => (
               <article key={name} className="rounded-lg bg-white p-6 shadow-sm ring-1 ring-border">
                 <p className="text-5xl font-black leading-none text-primary/20">“</p>
-                <p className="mt-2 text-sm leading-7 text-muted">{quote}</p>
+                <p className="mt-2 text-sm leading-7 text-[#3D4451]">{quote}</p>
                 <p className="mt-4 text-accent">★★★★★</p>
                 <h3 className="mt-3 font-display text-xl font-black text-primary">{name}</h3>
-                <p className="text-sm font-semibold text-muted">{role}</p>
+                <p className="text-sm font-semibold text-[#3D4451]">{role}</p>
               </article>
             ))}
           </div>
@@ -49,3 +49,4 @@ export default function TestimonialsCarousel() {
     </section>
   );
 }
+

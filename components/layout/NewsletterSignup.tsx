@@ -41,7 +41,7 @@ export default function NewsletterSignup({ compact = false }: { compact?: boolea
     <section className="bg-surface-3 px-5 py-14 text-foreground sm:px-8">
       <div className="mx-auto max-w-7xl">
         <h2 className="font-display text-4xl font-black text-primary">Stay Connected with IRODOV</h2>
-        <p className="mt-3 max-w-2xl text-muted">Get updates on our programs, events, and impact stories delivered to your inbox</p>
+        <p className="mt-3 max-w-2xl text-[#3D4451]">Get updates on our programs, events, and impact stories delivered to your inbox</p>
         <div className="mt-6 flex max-w-2xl flex-col gap-3 sm:flex-row">
           <input
             value={email}
@@ -53,9 +53,10 @@ export default function NewsletterSignup({ compact = false }: { compact?: boolea
             Subscribe
           </button>
         </div>
-        <p className="mt-3 text-sm text-muted">We respect your privacy. Unsubscribe anytime.</p>
+        <p className="mt-3 text-sm text-[#3D4451]">We respect your privacy. Unsubscribe anytime.</p>
         {done && <p className="mt-4 font-bold text-accent">You are subscribed. Thank you.</p>}
       </div>
     </section>
   );
 }
+

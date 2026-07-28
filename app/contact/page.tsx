@@ -18,7 +18,7 @@ export default function ContactPage() {
           <div className="mt-6 space-y-4">
             <div>
               <p className="text-sm font-bold uppercase tracking-wide text-primary">Registered Office</p>
-              <p className="mt-1 leading-7 text-muted">
+              <p className="mt-1 leading-7 text-[#3D4451]">
                 1175, C-2 Block, Palam Vihar
                 <br />
                 Gurgaon, Haryana, India
@@ -28,13 +28,13 @@ export default function ContactPage() {
             </div>
             <div>
               <p className="text-sm font-bold uppercase tracking-wide text-primary">Phone</p>
-              <p className="mt-1 text-muted">+91 9717232575</p>
-              <p className="text-muted">+91 9971060575</p>
+              <p className="mt-1 text-[#3D4451]">+91 9717232575</p>
+              <p className="text-[#3D4451]">+91 9971060575</p>
             </div>
             <div>
               <p className="text-sm font-bold uppercase tracking-wide text-primary">Email</p>
-              <p className="mt-1 text-muted">info@irodovcharitabletrust.org</p>
-              <p className="text-muted">helpdesk@irodovcharitabletrust.org</p>
+              <p className="mt-1 text-[#3D4451]">info@irodovcharitabletrust.org</p>
+              <p className="text-[#3D4451]">helpdesk@irodovcharitabletrust.org</p>
             </div>
           </div>
         </div>
@@ -42,3 +42,4 @@ export default function ContactPage() {
     </main>
   );
 }
+

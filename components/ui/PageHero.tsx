@@ -11,7 +11,7 @@ export default function PageHero({ title, subtitle, breadcrumbs }: { title: stri
   return (
     <section className="bg-surface text-foreground">
       <div className="mx-auto max-w-7xl px-5 py-14 sm:px-8">
-        <nav className="mb-5 flex flex-wrap gap-2 text-sm text-muted">
+        <nav className="mb-5 flex flex-wrap gap-2 text-sm text-[#3D4451]">
           {breadcrumbs.map((crumb, index) => {
             const label = crumb.label === "Home" ? (language === "hi" ? "होम" : "Home") : crumb.label;
             return (
@@ -23,8 +23,9 @@ export default function PageHero({ title, subtitle, breadcrumbs }: { title: stri
           })}
         </nav>
         <h1 className="font-display text-2xl font-black leading-tight sm:text-5xl">{title}</h1>
-        {subtitle && <p className="mt-5 max-w-3xl text-lg leading-8 text-muted">{subtitle}</p>}
+        {subtitle && <p className="mt-5 max-w-3xl text-lg leading-8 text-[#3D4451]">{subtitle}</p>}
       </div>
     </section>
   );
 }
+

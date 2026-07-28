@@ -7,7 +7,8 @@ export default function TeamCard({ name, role, bio }: { name: string; role: stri
       <Image src={placeholder(name, "480x360")} alt={name} width={480} height={360} className="h-52 w-full rounded-md object-cover" />
       <h3 className="mt-5 font-display text-xl font-black">{name}</h3>
       <p className="mt-1 text-sm font-bold text-primary">{role}</p>
-      <p className="mt-3 text-sm leading-6 text-muted">{bio}</p>
+      <p className="mt-3 text-sm leading-6 text-[#3D4451]">{bio}</p>
     </article>
   );
 }
+

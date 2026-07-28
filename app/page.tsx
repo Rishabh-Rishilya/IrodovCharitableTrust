@@ -184,7 +184,7 @@ export default function Home() {
             <h1 className="max-w-4xl font-display text-2xl font-black leading-tight text-primary sm:text-5xl lg:text-7xl">
               {text.heroTitle}
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-muted">{text.heroSubtitle}</p>
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-[#3D4451]">{text.heroSubtitle}</p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link href="/programs" className="rounded-lg border border-primary px-6 py-3 text-center font-bold text-primary transition hover:bg-primary hover:text-white!">
                 {text.explorePrograms}
@@ -217,7 +217,7 @@ export default function Home() {
               {text.founderQuote}
             </blockquote>
             <p className="mt-6 font-bold">{text.founderName}</p>
-            <p className="text-muted">{text.founderTitle}</p>
+            <p className="text-[#3D4451]">{text.founderTitle}</p>
           </div>
         </div>
       </section>
@@ -226,13 +226,13 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-6 lg:grid-cols-2">
           <article className="rounded-lg bg-[#F5EFE0] p-8 text-primary shadow-sm ring-1 ring-[#E5D9C3]">
             <h2 className="font-display text-3xl font-black">{text.visionLabel}</h2>
-            <p className="mt-4 leading-7 text-muted">
+            <p className="mt-4 leading-7 text-[#3D4451]">
               {text.visionText}
             </p>
           </article>
           <article className="rounded-lg bg-[#F5EFE0] p-8 text-primary shadow-sm ring-1 ring-[#E5D9C3]">
             <h2 className="font-display text-3xl font-black">{text.missionLabel}</h2>
-            <p className="mt-4 leading-7 text-muted">
+            <p className="mt-4 leading-7 text-[#3D4451]">
               {text.missionText}
             </p>
           </article>
@@ -246,32 +246,32 @@ export default function Home() {
             <article className="rounded-lg bg-white p-6 shadow-sm ring-1 ring-border">
               <p className="text-3xl text-accent">❤️</p>
               <h3 className="mt-4 font-display text-xl font-black text-primary">{text.compassion}</h3>
-              <p className="mt-2 text-sm leading-6 text-muted">{text.compassionDesc}</p>
+              <p className="mt-2 text-sm leading-6 text-[#3D4451]">{text.compassionDesc}</p>
             </article>
             <article className="rounded-lg bg-white p-6 shadow-sm ring-1 ring-border">
               <p className="text-3xl text-accent">🛡️</p>
               <h3 className="mt-4 font-display text-xl font-black text-primary">{text.integrity}</h3>
-              <p className="mt-2 text-sm leading-6 text-muted">{text.integrityDesc}</p>
+              <p className="mt-2 text-sm leading-6 text-[#3D4451]">{text.integrityDesc}</p>
             </article>
             <article className="rounded-lg bg-white p-6 shadow-sm ring-1 ring-border">
               <p className="text-3xl text-accent">⭐</p>
               <h3 className="mt-4 font-display text-xl font-black text-primary">{text.excellence}</h3>
-              <p className="mt-2 text-sm leading-6 text-muted">{text.excellenceDesc}</p>
+              <p className="mt-2 text-sm leading-6 text-[#3D4451]">{text.excellenceDesc}</p>
             </article>
             <article className="rounded-lg bg-white p-6 shadow-sm ring-1 ring-border">
               <p className="text-3xl text-accent">👥</p>
               <h3 className="mt-4 font-display text-xl font-black text-primary">{text.inclusion}</h3>
-              <p className="mt-2 text-sm leading-6 text-muted">{text.inclusionDesc}</p>
+              <p className="mt-2 text-sm leading-6 text-[#3D4451]">{text.inclusionDesc}</p>
             </article>
             <article className="rounded-lg bg-white p-6 shadow-sm ring-1 ring-border">
               <p className="text-3xl text-accent">💡</p>
               <h3 className="mt-4 font-display text-xl font-black text-primary">{text.innovation}</h3>
-              <p className="mt-2 text-sm leading-6 text-muted">{text.innovationDesc}</p>
+              <p className="mt-2 text-sm leading-6 text-[#3D4451]">{text.innovationDesc}</p>
             </article>
             <article className="rounded-lg bg-white p-6 shadow-sm ring-1 ring-border">
               <p className="text-3xl text-accent">👁️</p>
               <h3 className="mt-4 font-display text-xl font-black text-primary">{text.transparency}</h3>
-              <p className="mt-2 text-sm leading-6 text-muted">{text.transparencyDesc}</p>
+              <p className="mt-2 text-sm leading-6 text-[#3D4451]">{text.transparencyDesc}</p>
             </article>
           </div>
         </div>
@@ -280,7 +280,7 @@ export default function Home() {
       <section className="bg-white px-5 py-16 sm:px-8">
         <div className="mx-auto max-w-7xl">
           <h2 className="font-display text-4xl font-black text-primary">Our Work in Action</h2>
-          <p className="mt-3 max-w-2xl text-muted">Moments from our classrooms and communities.</p>
+          <p className="mt-3 max-w-2xl text-[#3D4451]">Moments from our classrooms and communities.</p>
           <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {[15, 10, 11, 12, 13, 14].map((photo) => (
               <Image
@@ -305,7 +305,7 @@ export default function Home() {
               <div className="p-5">
                 <span className="rounded-full bg-surface-2 px-3 py-1 text-xs font-bold text-primary">Bihar</span>
                 <h3 className="mt-4 font-display text-xl font-black">Rural STEM Learning Labs</h3>
-                <p className="mt-2 text-sm leading-6 text-muted">Hands-on science learning spaces for rural school students.</p>
+                <p className="mt-2 text-sm leading-6 text-[#3D4451]">Hands-on science learning spaces for rural school students.</p>
                 <div className="mt-4 h-2 rounded-full bg-primary/10"><div className="h-2 w-[72%] rounded-full bg-accent" /></div>
                 <Link href="/projects" className="mt-5 inline-block rounded-md border border-primary px-4 py-2 text-sm font-bold text-primary transition hover:bg-primary hover:text-white">{text.learnMore}</Link>
               </div>
@@ -315,7 +315,7 @@ export default function Home() {
               <div className="p-5">
                 <span className="rounded-full bg-surface-2 px-3 py-1 text-xs font-bold text-primary">Delhi NCR</span>
                 <h3 className="mt-4 font-display text-xl font-black">Mental Wellness Helpline</h3>
-                <p className="mt-2 text-sm leading-6 text-muted">Counselling and crisis support access for young people.</p>
+                <p className="mt-2 text-sm leading-6 text-[#3D4451]">Counselling and crisis support access for young people.</p>
                 <div className="mt-4 h-2 rounded-full bg-primary/10"><div className="h-2 w-[80%] rounded-full bg-accent" /></div>
                 <Link href="/projects" className="mt-5 inline-block rounded-md border border-primary px-4 py-2 text-sm font-bold text-primary transition hover:bg-primary hover:text-white">{text.learnMore}</Link>
               </div>
@@ -325,7 +325,7 @@ export default function Home() {
               <div className="p-5">
                 <span className="rounded-full bg-surface-2 px-3 py-1 text-xs font-bold text-primary">15 States</span>
                 <h3 className="mt-4 font-display text-xl font-black">Scholarship Cohort 2024</h3>
-                <p className="mt-2 text-sm leading-6 text-muted">Need-based education aid for school and college learners.</p>
+                <p className="mt-2 text-sm leading-6 text-[#3D4451]">Need-based education aid for school and college learners.</p>
                 <div className="mt-4 h-2 rounded-full bg-primary/10"><div className="h-2 w-[64%] rounded-full bg-accent" /></div>
                 <Link href="/projects" className="mt-5 inline-block rounded-md border border-primary px-4 py-2 text-sm font-bold text-primary transition hover:bg-primary hover:text-white">{text.learnMore}</Link>
               </div>
@@ -335,7 +335,7 @@ export default function Home() {
               <div className="p-5">
                 <span className="rounded-full bg-surface-2 px-3 py-1 text-xs font-bold text-primary">Uttar Pradesh</span>
                 <h3 className="mt-4 font-display text-xl font-black">Community Health Camps</h3>
-                <p className="mt-2 text-sm leading-6 text-muted">Preventive healthcare outreach with referral support.</p>
+                <p className="mt-2 text-sm leading-6 text-[#3D4451]">Preventive healthcare outreach with referral support.</p>
                 <div className="mt-4 h-2 rounded-full bg-primary/10"><div className="h-2 w-[68%] rounded-full bg-accent" /></div>
                 <Link href="/projects" className="mt-5 inline-block rounded-md border border-primary px-4 py-2 text-sm font-bold text-primary transition hover:bg-primary hover:text-white">{text.learnMore}</Link>
               </div>
@@ -358,7 +358,7 @@ export default function Home() {
                 </svg>
               </span>
               <h3 className="mt-4 font-display text-2xl font-black text-primary">Shiksha Ke Liye</h3>
-              <p className="mt-2 text-muted">{text.shikshaSub}</p>
+              <p className="mt-2 text-[#3D4451]">{text.shikshaSub}</p>
               <AccentButton href="/donate" className="mt-5 px-4 py-2">
                 {text.donateForCampaign}
               </AccentButton>
@@ -370,7 +370,7 @@ export default function Home() {
                 </svg>
               </span>
               <h3 className="mt-4 font-display text-2xl font-black text-primary">Swasthya Pehle</h3>
-              <p className="mt-2 text-muted">{text.swasthyaSub}</p>
+              <p className="mt-2 text-[#3D4451]">{text.swasthyaSub}</p>
               <AccentButton href="/donate" className="mt-5 px-4 py-2">
                 {text.donateForCampaign}
               </AccentButton>
@@ -383,7 +383,7 @@ export default function Home() {
                 </svg>
               </span>
               <h3 className="mt-4 font-display text-2xl font-black text-primary">Muskaan</h3>
-              <p className="mt-2 text-muted">{text.muskaanSub}</p>
+              <p className="mt-2 text-[#3D4451]">{text.muskaanSub}</p>
               <AccentButton href="/donate" className="mt-5 px-4 py-2">
                 {text.donateForCampaign}
               </AccentButton>
@@ -395,7 +395,7 @@ export default function Home() {
                 </svg>
               </span>
               <h3 className="mt-4 font-display text-2xl font-black text-primary">Aajeevika</h3>
-              <p className="mt-2 text-muted">{text.aajeevikaaSub}</p>
+              <p className="mt-2 text-[#3D4451]">{text.aajeevikaaSub}</p>
               <AccentButton href="/donate" className="mt-5 px-4 py-2">
                 {text.donateForCampaign}
               </AccentButton>
@@ -418,10 +418,10 @@ export default function Home() {
                 </div>
                 <div className="p-5">
                   <h3 className="font-display text-2xl font-black text-primary">{name}</h3>
-                  <p className="mt-1 text-sm font-bold text-muted">
+                  <p className="mt-1 text-sm font-bold text-[#3D4451]">
                     {text.villageLocation}: {["Rajasthan", "Bihar", "Delhi"][index]}
                   </p>
-                  <p className="mt-3 line-clamp-3 text-sm leading-6 text-muted">With timely guidance, learning resources, and emotional support from IRODOV, {name} found a path forward and renewed confidence for the future.</p>
+                  <p className="mt-3 line-clamp-3 text-sm leading-6 text-[#3D4451]">With timely guidance, learning resources, and emotional support from IRODOV, {name} found a path forward and renewed confidence for the future.</p>
                   <Link href="/media/stories" className="mt-4 inline-block rounded-lg bg-[#1E5FA8] px-5 py-2 text-sm font-semibold transition-colors hover:bg-[#174a85]" style={{ color: "#FFFFFF" }}>
                     Read More
                   </Link>
@@ -441,19 +441,19 @@ export default function Home() {
             <article className="rounded-lg bg-white p-5 shadow-sm ring-1 ring-border">
               <div className="flex items-start justify-between gap-4"><span className="rounded-lg bg-accent px-3 py-2 text-center font-black text-white">12<span className="block text-xs">Jul</span></span><span className="rounded-full bg-surface-2 px-3 py-1 text-xs font-bold text-primary">Workshop</span></div>
               <h3 className="mt-5 font-display text-xl font-black">Student Wellness Workshop</h3>
-              <p className="mt-2 text-sm text-muted">Delhi</p>
+              <p className="mt-2 text-sm text-[#3D4451]">Delhi</p>
               <Link href="/contact" className="mt-5 inline-block rounded-md bg-accent px-4 py-2 text-sm font-bold" style={{ color: "#FFFFFF" }}>Register</Link>
             </article>
             <article className="rounded-lg bg-white p-5 shadow-sm ring-1 ring-border">
               <div className="flex items-start justify-between gap-4"><span className="rounded-lg bg-accent px-3 py-2 text-center font-black text-white">26<span className="block text-xs">Jul</span></span><span className="rounded-full bg-surface-2 px-3 py-1 text-xs font-bold text-primary">Medical Camp</span></div>
               <h3 className="mt-5 font-display text-xl font-black">Mobile Health Camp</h3>
-              <p className="mt-2 text-sm text-muted">Lucknow</p>
+              <p className="mt-2 text-sm text-[#3D4451]">Lucknow</p>
               <Link href="/contact" className="mt-5 inline-block rounded-md bg-accent px-4 py-2 text-sm font-bold" style={{ color: "#FFFFFF" }}>Register</Link>
             </article>
             <article className="rounded-lg bg-white p-5 shadow-sm ring-1 ring-border">
               <div className="flex items-start justify-between gap-4"><span className="rounded-lg bg-accent px-3 py-2 text-center font-black text-white">18<span className="block text-xs">Aug</span></span><span className="rounded-full bg-surface-2 px-3 py-1 text-xs font-bold text-primary">Webinar</span></div>
               <h3 className="mt-5 font-display text-xl font-black">Scholarship Orientation</h3>
-              <p className="mt-2 text-sm text-muted">Online</p>
+              <p className="mt-2 text-sm text-[#3D4451]">Online</p>
               <Link href="/contact" className="mt-5 inline-block rounded-md bg-accent px-4 py-2 text-sm font-bold" style={{ color: "#FFFFFF" }}>Register</Link>
             </article>
           </div>
@@ -466,15 +466,15 @@ export default function Home() {
           <div className="mt-8 grid gap-5 md:grid-cols-3">
             <article className="overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-border">
               <Image src="/images/students/classroom-5.jpg" alt="Students and teacher engaged in classroom learning" width={400} height={240} className="h-44 w-full object-cover" />
-              <div className="p-5"><p className="text-xs font-bold text-muted">10 Jun 2026</p><h3 className="mt-3 font-display text-xl font-black">IRODOV opens annual scholarship applications</h3><p className="mt-3 text-sm leading-6 text-muted">Students across partner states can apply for education continuity support and mentoring.</p><Link href="/media" className="mt-4 inline-block text-sm font-bold text-primary">{text.readMore}</Link></div>
+              <div className="p-5"><p className="text-xs font-bold text-[#3D4451]">10 Jun 2026</p><h3 className="mt-3 font-display text-xl font-black">IRODOV opens annual scholarship applications</h3><p className="mt-3 text-sm leading-6 text-[#3D4451]">Students across partner states can apply for education continuity support and mentoring.</p><Link href="/media" className="mt-4 inline-block text-sm font-bold text-primary">{text.readMore}</Link></div>
             </article>
             <article className="overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-border">
               <Image src="/images/students/classroom-6.jpg" alt="Students and teacher engaged in classroom learning" width={400} height={240} className="h-44 w-full object-cover" />
-              <div className="p-5"><p className="text-xs font-bold text-muted">22 May 2026</p><h3 className="mt-3 font-display text-xl font-black">Helpline expands counselling hours for students</h3><p className="mt-3 text-sm leading-6 text-muted">The mental health team has extended access windows for urgent student support.</p><Link href="/media" className="mt-4 inline-block text-sm font-bold text-primary">{text.readMore}</Link></div>
+              <div className="p-5"><p className="text-xs font-bold text-[#3D4451]">22 May 2026</p><h3 className="mt-3 font-display text-xl font-black">Helpline expands counselling hours for students</h3><p className="mt-3 text-sm leading-6 text-[#3D4451]">The mental health team has extended access windows for urgent student support.</p><Link href="/media" className="mt-4 inline-block text-sm font-bold text-primary">{text.readMore}</Link></div>
             </article>
             <article className="overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-border">
               <Image src="/images/students/classroom-7.jpg" alt="Students and teacher engaged in classroom learning" width={400} height={240} className="h-44 w-full object-cover" />
-              <div className="p-5"><p className="text-xs font-bold text-muted">30 Apr 2026</p><h3 className="mt-3 font-display text-xl font-black">Rural STEM pilot publishes first learning note</h3><p className="mt-3 text-sm leading-6 text-muted">Field observations from rural learning labs are now available to partners.</p><Link href="/media" className="mt-4 inline-block text-sm font-bold text-primary">{text.readMore}</Link></div>
+              <div className="p-5"><p className="text-xs font-bold text-[#3D4451]">30 Apr 2026</p><h3 className="mt-3 font-display text-xl font-black">Rural STEM pilot publishes first learning note</h3><p className="mt-3 text-sm leading-6 text-[#3D4451]">Field observations from rural learning labs are now available to partners.</p><Link href="/media" className="mt-4 inline-block text-sm font-bold text-primary">{text.readMore}</Link></div>
             </article>
           </div>
         </div>
@@ -487,10 +487,10 @@ export default function Home() {
           <p className="text-sm font-black uppercase tracking-widest text-accent">{text.supplementing}</p>
           <h2 className="mt-3 font-display text-4xl font-black text-primary">{text.alignedWithMissions}</h2>
           <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-            <article className="rounded-lg bg-white p-6 shadow-sm ring-1 ring-border"><p className="text-3xl">🎓</p><h3 className="mt-4 font-display text-xl font-black text-primary">{text.education}</h3><ul className="mt-3 grid gap-2 text-sm text-muted"><li>Sarva Shiksha Abhiyan</li><li>NEP 2020</li><li>Digital India</li><li>Beti Bachao Beti Padhao</li></ul></article>
-            <article className="rounded-lg bg-white p-6 shadow-sm ring-1 ring-border"><p className="text-3xl">⚕️</p><h3 className="mt-4 font-display text-xl font-black text-primary">{text.healthcare}</h3><ul className="mt-3 grid gap-2 text-sm text-muted"><li>Ayushman Bharat</li><li>National Rural Health Mission</li><li>Universal Health Coverage</li></ul></article>
-            <article className="rounded-lg bg-white p-6 shadow-sm ring-1 ring-border"><p className="text-3xl">💼</p><h3 className="mt-4 font-display text-xl font-black text-primary">Skill Dev</h3><ul className="mt-3 grid gap-2 text-sm text-muted"><li>Skill India Mission</li><li>PMKVY</li><li>Startup India</li></ul></article>
-            <article className="rounded-lg bg-white p-6 shadow-sm ring-1 ring-border"><p className="text-3xl">🤝</p><h3 className="mt-4 font-display text-xl font-black text-primary">Social</h3><ul className="mt-3 grid gap-2 text-sm text-muted"><li>MGNREGA</li><li>PM Awas Yojana</li><li>Swachh Bharat Mission</li></ul></article>
+            <article className="rounded-lg bg-white p-6 shadow-sm ring-1 ring-border"><p className="text-3xl">🎓</p><h3 className="mt-4 font-display text-xl font-black text-primary">{text.education}</h3><ul className="mt-3 grid gap-2 text-sm text-[#3D4451]"><li>Sarva Shiksha Abhiyan</li><li>NEP 2020</li><li>Digital India</li><li>Beti Bachao Beti Padhao</li></ul></article>
+            <article className="rounded-lg bg-white p-6 shadow-sm ring-1 ring-border"><p className="text-3xl">⚕️</p><h3 className="mt-4 font-display text-xl font-black text-primary">{text.healthcare}</h3><ul className="mt-3 grid gap-2 text-sm text-[#3D4451]"><li>Ayushman Bharat</li><li>National Rural Health Mission</li><li>Universal Health Coverage</li></ul></article>
+            <article className="rounded-lg bg-white p-6 shadow-sm ring-1 ring-border"><p className="text-3xl">💼</p><h3 className="mt-4 font-display text-xl font-black text-primary">Skill Dev</h3><ul className="mt-3 grid gap-2 text-sm text-[#3D4451]"><li>Skill India Mission</li><li>PMKVY</li><li>Startup India</li></ul></article>
+            <article className="rounded-lg bg-white p-6 shadow-sm ring-1 ring-border"><p className="text-3xl">🤝</p><h3 className="mt-4 font-display text-xl font-black text-primary">Social</h3><ul className="mt-3 grid gap-2 text-sm text-[#3D4451]"><li>MGNREGA</li><li>PM Awas Yojana</li><li>Swachh Bharat Mission</li></ul></article>
           </div>
         </div>
       </section>
@@ -501,7 +501,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
             <h2 className="font-display text-4xl font-black">{text.donateHeading}</h2>
-            <p className="mt-4 text-muted">{text.taxExemptText}</p>
+            <p className="mt-4 text-[#3D4451]">{text.taxExemptText}</p>
             <div className="mt-8 rounded-lg bg-white p-6 text-foreground">
               <div className="flex flex-wrap gap-2 text-sm font-bold">
                 <button
@@ -563,3 +563,4 @@ export default function Home() {
     </main>
   );
 }
+

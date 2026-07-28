@@ -12,7 +12,7 @@ export default async function SearchPage({ searchParams }: { searchParams: Promi
       <section className="mx-auto max-w-7xl px-5 py-16 sm:px-8">
         <div className="rounded-lg bg-white p-6 shadow-sm ring-1 ring-border">
           <h2 className="font-display text-3xl font-black text-primary">No results found</h2>
-          <p className="mt-3 text-muted">Browse our most active program areas below.</p>
+          <p className="mt-3 text-[#3D4451]">Browse our most active program areas below.</p>
         </div>
         <div className="mt-8 grid gap-5 md:grid-cols-3">
           <ProgramCard title="Education" desc="Learning support, digital access, and academic continuity." href="/programs/education" />
@@ -24,3 +24,4 @@ export default async function SearchPage({ searchParams }: { searchParams: Promi
     </main>
   );
 }
+

@@ -19,7 +19,7 @@ export default function VisionMissionPage() {
           {pillars.map((pillar) => <div key={pillar} className="rounded-lg bg-white p-6 shadow-sm ring-1 ring-[#E5D9C3]"><p className="text-2xl text-accent">◆</p><h3 className="mt-3 font-display text-xl font-black text-primary">{pillar}</h3></div>)}
         </div>
         <h2 className="mt-12 font-display text-3xl font-black text-primary">Long-term Goals</h2>
-        <ol className="mt-6 grid gap-3 text-muted">
+        <ol className="mt-6 grid gap-3 text-[#3D4451]">
           {["Reach underserved communities across India", "Create accessible mental health support systems", "Fund education continuity for vulnerable students", "Build a research-driven social impact model", "Publish transparent annual reports and impact dashboards"].map((goal, index) => <li key={goal} className="rounded-md bg-surface p-4 font-semibold">{index + 1}. {goal}</li>)}
         </ol>
         <h2 className="mt-12 font-display text-3xl font-black text-primary">Strategic Roadmap</h2>
@@ -34,3 +34,4 @@ export default function VisionMissionPage() {
     </main>
   );
 }
+

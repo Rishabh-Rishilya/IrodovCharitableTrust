@@ -80,7 +80,7 @@ export default function Navbar() {
           <Image src="/logo.png" alt="IRODOV Charitable Trust" width={96} height={96} className="h-20 w-auto object-contain" priority unoptimized />
           <div className="hidden flex-col leading-tight md:flex">
             <span className="font-serif text-2xl font-bold whitespace-nowrap text-primary">IRODOV</span>
-            <span className="whitespace-nowrap text-[15px] font-medium tracking-widest text-muted">CHARITABLE TRUST</span>
+            <span className="whitespace-nowrap text-[15px] font-medium tracking-widest text-[#3D4451]">CHARITABLE TRUST</span>
           </div>
         </Link>
 
@@ -98,7 +98,7 @@ export default function Navbar() {
               {programs.map(([slug, title, desc]) => (
                 <Link key={slug} href={`/programs/${slug}`} className="rounded-md p-3 transition hover:bg-surface" onClick={() => setProgramsOpen(false)}>
                   <span className="block font-bold text-primary">{title}</span>
-                  <span className="mt-1 block text-xs leading-5 text-muted">{desc}</span>
+                  <span className="mt-1 block text-xs leading-5 text-[#3D4451]">{desc}</span>
                 </Link>
               ))}
             </div>
@@ -135,9 +135,9 @@ export default function Navbar() {
             aria-label="Toggle language"
           >
             <Globe className="size-4 text-[#2D2D2D]" aria-hidden="true" />
-            <span className={language === "en" ? "font-bold text-[#FF6B35]" : "text-[#666666]"}>EN</span>
+            <span className={language === "en" ? "font-bold text-[#FF6B35]" : "text-[#3D4451]"}>EN</span>
             <span className="text-[#E8E8E0]">|</span>
-            <span className={language === "hi" ? "font-bold text-[#FF6B35]" : "text-[#666666]"}>हिं</span>
+            <span className={language === "hi" ? "font-bold text-[#FF6B35]" : "text-[#3D4451]"}>हिं</span>
           </button>
           <form ref={searchRef} onSubmit={submitSearch} className="hidden items-center gap-2 md:flex">
             <input
@@ -176,7 +176,7 @@ export default function Navbar() {
                 <Image src="/logo.png" alt="IRODOV Charitable Trust" width={72} height={72} className="h-16 w-auto object-contain" priority unoptimized />
                 <div className="hidden flex-col leading-tight sm:flex">
                   <span className="font-serif text-xl font-bold whitespace-nowrap text-primary">IRODOV</span>
-                  <span className="whitespace-nowrap text-[12px] font-medium tracking-widest text-muted">CHARITABLE TRUST</span>
+                  <span className="whitespace-nowrap text-[12px] font-medium tracking-widest text-[#3D4451]">CHARITABLE TRUST</span>
                 </div>
               </Link>
               <button type="button" onClick={() => setOpen(false)} className="grid size-11 place-items-center rounded-lg border border-border text-primary" aria-label="Close menu">
@@ -241,3 +241,4 @@ function MenuLink({ href, onClick, children }: { href: string; onClick: () => vo
       </Link>
   );
 }
+

@@ -23,10 +23,10 @@ export default function StoriesPage() {
             <div className="p-5">
               <div className="flex items-center justify-between gap-3 text-xs font-bold">
                 <span className="rounded-full bg-[#FFF8F0] border border-[#FF6B35] px-2 py-1 text-xs text-[#FF6B35]">{category}</span>
-                <span className="text-[#666666] text-xs">{date}</span>
+                <span className="text-[#3D4451] text-xs">{date}</span>
               </div>
               <h2 className="mt-4 font-display text-2xl font-black text-primary">{name}</h2>
-              <p className="mt-1 text-[#666666] text-sm">{location}</p>
+              <p className="mt-1 text-[#3D4451] text-sm">{location}</p>
               <p className="mt-4 text-[#2D2D2D] text-sm leading-relaxed">
                 Through IRODOV support, {name} found timely guidance, practical resources, and renewed confidence. This placeholder story describes a 5-6 line journey of challenge, support, and measurable change in education, health, or wellbeing.
               </p>
@@ -37,3 +37,4 @@ export default function StoriesPage() {
     </main>
   );
 }
+

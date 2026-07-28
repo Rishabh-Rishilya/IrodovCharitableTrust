@@ -27,8 +27,6 @@ export default function Footer() {
         ["Vision & Mission", "/vision-mission"],
         ["Projects", "/projects"],
         ["Research Centre", "/research"],
-        ["Transparency", "/transparency"],
-        ["Annual Reports", "/about/annual-reports"],
       ],
     },
     {
@@ -52,7 +50,7 @@ export default function Footer() {
             <Image src="/logo.png" alt="IRODOV Charitable Trust" width={40} height={40} className="h-8 w-auto object-contain" unoptimized />
             <div className="flex flex-col leading-tight">
               <span className="font-serif text-lg font-bold whitespace-nowrap text-[#1E5FA8]">IRODOV</span>
-              <span className="whitespace-nowrap text-xs tracking-widest text-[#666666]">CHARITABLE TRUST</span>
+              <span className="whitespace-nowrap text-xs tracking-widest text-[#3D4451]">CHARITABLE TRUST</span>
             </div>
           </div>
           <p className="mt-4 text-sm leading-6 text-[#2D2D2D]">
@@ -62,7 +60,7 @@ export default function Footer() {
             <a href="https://www.facebook.com/share/14iJmwop8Zm/" target="_blank" rel="noopener noreferrer">Facebook</a>
             <a href="https://x.com/Naveen_JNU" target="_blank" rel="noopener noreferrer">Twitter</a>
             <a href="https://www.instagram.com/irodov_charitable_trust?igsh=cHk2ZzhleDN3dnY5" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <span>YouTube</span>
+            <a href="https://youtu.be/6OPz5vyBdxY?si=dz7W9GiaB0v6iqfK" target="_blank" rel="noopener noreferrer">Youtube</a>
             <span>LinkedIn</span>
           </div>
           <NewsletterSignup compact />
@@ -78,10 +76,10 @@ export default function Footer() {
         <div>
           <h3 className="text-[#1E5FA8] font-bold text-base">{language === "hi" ? "संपर्क करें" : "Contact Us"}</h3>
           <p className="mt-4 text-sm leading-7 text-[#2D2D2D]">
-            New Delhi, India<br />
-            +91-XXXXX-XXXXX<br />
-            info@irodovtrust.org<br />
-            Mon-Sat, 9AM - 6PM
+            Ground Floor, 1175, C-2 Block, Palam Vihar, Gurgaon, Haryana,<br />
+            India, Pin Code: 122017<br />
+            +91 9717232575 <br />
+            info@irodovcharitabletrust.org<br />
           </p>
         </div>
       </div>
@@ -96,7 +94,7 @@ export default function Footer() {
                 <Image src="/rishilya-logo.png" alt="Rishilya IT Solutions" width={28} height={28} className="h-7 w-auto object-contain" unoptimized />
                 <div className="flex flex-col leading-tight">
                   <span className="font-black text-sm tracking-wider text-[#1B4332]">RISHILYA</span>
-                  <span className="text-[9px] tracking-widest text-[#666666] uppercase">IT SOLUTIONS</span>
+                  <span className="text-[9px] tracking-widest text-[#3D4451] uppercase">IT SOLUTIONS</span>
                 </div>
               </div>
             </div>
@@ -110,7 +108,7 @@ export default function Footer() {
           </div>
         </div>
         <p className="mx-auto mt-3 max-w-7xl text-[#1E5FA8]/60">
-          Registered under Indian Trusts Act | PAN: AAATI1234X | 80G Certified | 12A Certified | CSR Eligible
+          Registered under Indian Trust Act 1882.
         </p>
       </div>
     </footer>

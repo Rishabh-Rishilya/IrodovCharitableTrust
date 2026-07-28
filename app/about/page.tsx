@@ -9,8 +9,6 @@ const subnav = [
   ["Founder", "/about/founder"],
   ["Trustees", "/about/trustees"],
   ["Advisory", "/about/advisory"],
-  ["Governance", "/about/governance"],
-  ["Annual Reports", "/about/annual-reports"],
 ];
 
 export default function AboutPage() {
@@ -38,7 +36,7 @@ export default function AboutPage() {
         <div className="mt-12 grid gap-10 lg:grid-cols-2">
           <div>
             <h2 className="font-display text-3xl font-black text-primary">Why IRODOV</h2>
-            <p className="mt-4 leading-7 text-muted">
+            <p className="mt-4 leading-7 text-[#3D4451]">
               The name IRODOV represents disciplined learning, scientific curiosity, and a deep respect for human potential. The trust carries that spirit into education, mental wellness, research, and social welfare.
             </p>
             <blockquote className="mt-6 border-l-4 border-accent pl-5 font-display text-2xl font-bold text-primary">
@@ -76,7 +74,7 @@ export default function AboutPage() {
               ].map(([k, v]) => (
                 <tr key={k} className="border-b border-border">
                   <td className="p-4 font-bold text-primary">{k}</td>
-                  <td className="p-4 text-muted">{v}</td>
+                  <td className="p-4 text-[#3D4451]">{v}</td>
                 </tr>
               ))}
             </tbody>
@@ -86,3 +84,4 @@ export default function AboutPage() {
     </main>
   );
 }
+

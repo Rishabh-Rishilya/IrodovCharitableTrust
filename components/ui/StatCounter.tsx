@@ -19,7 +19,8 @@ export default function StatCounter({ value, label }: { value: number; label: st
   return (
     <div className="rounded-lg bg-white p-6 text-center shadow-sm ring-1 ring-border">
       <p className="font-display text-4xl font-black text-primary">{count.toLocaleString()}+</p>
-      <p className="mt-2 text-sm font-semibold text-muted">{label}</p>
+      <p className="mt-2 text-sm font-semibold text-[#3D4451]">{label}</p>
     </div>
   );
 }
+

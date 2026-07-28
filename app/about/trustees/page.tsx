@@ -18,7 +18,7 @@ export default function TrusteesPage() {
           />
           <h2 className="mt-5 font-display text-xl font-black text-primary">Navin Kumar</h2>
           <p className="mt-1 text-sm font-bold text-accent">Founder & Managing Trustee</p>
-          <ul className="mt-4 space-y-1 text-sm text-muted">
+          <ul className="mt-4 space-y-1 text-sm text-[#3D4451]">
             <li>M.Sc Physics JNU, B.Ed.</li>
             <li>Gold Medalist — Society for Perfection</li>
           </ul>
@@ -34,7 +34,7 @@ export default function TrusteesPage() {
           </div>
           <h2 className="mt-5 font-display text-xl font-black text-primary">To Be Announced</h2>
           <p className="mt-1 text-sm font-bold text-accent">Board Trustee</p>
-          <p className="mt-4 text-sm leading-6 text-muted">
+          <p className="mt-4 text-sm leading-6 text-[#3D4451]">
             Details of the second trustee will be updated shortly.
           </p>
         </article>

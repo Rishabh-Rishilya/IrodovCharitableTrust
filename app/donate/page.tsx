@@ -24,7 +24,7 @@ export default function DonatePage() {
         <aside className="space-y-5 lg:sticky lg:top-28 lg:self-start">
           <div className="rounded-lg bg-white p-6 shadow-sm">
             <h2 className="font-display text-2xl font-black text-primary">{isHindi ? "आपका ₹1000 ..." : "Your ₹1000 can..."}</h2>
-            <ul className="mt-4 grid gap-3 text-sm text-muted">
+            <ul className="mt-4 grid gap-3 text-sm text-[#3D4451]">
               <li>{isHindi ? "अध्ययन सामग्री उपलब्ध कराए" : "Provide study materials"}</li>
               <li>{isHindi ? "परामर्श तक पहुँच समर्थन करे" : "Support counselling access"}</li>
               <li>{isHindi ? "स्वास्थ्य शिविर की आवश्यकताएँ पूरी करे" : "Fund health camp essentials"}</li>
@@ -42,7 +42,7 @@ export default function DonatePage() {
           </div>
           <div className="rounded-lg bg-white p-6 shadow-sm">
             <h2 className="font-bold text-primary">{isHindi ? "हाल के दाता" : "Recent Donors"}</h2>
-            <p className="mt-3 text-sm text-muted">Anita ₹2500 • Rahul ₹1000 • Priya ₹5000</p>
+            <p className="mt-3 text-sm text-[#3D4451]">Anita ₹2500 • Rahul ₹1000 • Priya ₹5000</p>
           </div>
           <a href="/donate/receipt" className="block rounded-lg border border-primary px-4 py-3 text-center font-bold text-primary transition hover:bg-transparent">
             {isHindi ? "नमूना रसीद देखें" : "View Sample Receipt"}
@@ -52,3 +52,4 @@ export default function DonatePage() {
     </main >
   );
 }
+

@@ -22,7 +22,7 @@ export default function ReceiptPage() {
             ].map(([key, value]) => (
               <tr key={key} className="border-b border-border">
                 <td className="p-4 font-bold text-primary">{key}</td>
-                <td className="p-4 text-muted">{value}</td>
+                <td className="p-4 text-[#3D4451]">{value}</td>
               </tr>
             ))}
           </tbody>
@@ -31,3 +31,4 @@ export default function ReceiptPage() {
     </main>
   );
 }
+

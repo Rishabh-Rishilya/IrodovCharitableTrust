@@ -9,7 +9,7 @@ export default function MentalHealthPill() {
       {open && (
         <div className="mb-3 ml-auto w-full max-w-[280px] rounded-lg bg-white p-4 shadow-xl ring-1 ring-danger/20">
           <p className="font-bold text-danger">Mental Health Helpline</p>
-          <p className="mt-1 text-sm text-muted">Confidential support, available for urgent guidance.</p>
+          <p className="mt-1 text-sm text-[#3D4451]">Confidential support, available for urgent guidance.</p>
           <div className="mt-4 flex gap-2">
             <a href="tel:1800000000" className="rounded-md bg-danger px-4 py-2 text-sm font-bold text-white">Call</a>
             <a href="https://wa.me/910000000000" className="rounded-md border border-danger px-4 py-2 text-sm font-bold text-danger">WhatsApp</a>
@@ -22,3 +22,4 @@ export default function MentalHealthPill() {
     </div>
   );
 }
+

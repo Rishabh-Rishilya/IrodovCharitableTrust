@@ -11,9 +11,9 @@ export default function TransparencyPage() {
     <main>
       <PageHero title="Transparency" breadcrumbs={[{ label: "Home", href: "/" }, { label: "Transparency" }]} />
       <section className="mx-auto max-w-7xl px-5 py-16 sm:px-8">
-        <p className="max-w-4xl text-lg leading-8 text-muted">IRODOV is committed to open documentation, public accountability, verified compliance records, and responsible utilization of every contribution received.</p>
+        <p className="max-w-4xl text-lg leading-8 text-[#3D4451]">IRODOV is committed to open documentation, public accountability, verified compliance records, and responsible utilization of every contribution received.</p>
         <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {docs.map(([name, year]) => <article key={name} className="rounded-lg bg-white p-6 shadow-sm ring-1 ring-border"><div className="flex items-start justify-between gap-4"><span className="text-3xl text-primary">▣</span><span className="rounded-full border border-success bg-surface-3 px-3 py-1 text-xs font-bold text-success">Verified</span></div><h2 className="mt-5 font-display text-xl font-black text-primary">{name}</h2><p className="mt-2 text-sm text-muted">{year}</p><button className="mt-5 rounded-md border border-primary px-4 py-2 text-sm font-bold text-primary transition hover:bg-primary hover:text-white">Download / View</button></article>)}
+          {docs.map(([name, year]) => <article key={name} className="rounded-lg bg-white p-6 shadow-sm ring-1 ring-border"><div className="flex items-start justify-between gap-4"><span className="text-3xl text-primary">▣</span><span className="rounded-full border border-success bg-surface-3 px-3 py-1 text-xs font-bold text-success">Verified</span></div><h2 className="mt-5 font-display text-xl font-black text-primary">{name}</h2><p className="mt-2 text-sm text-[#3D4451]">{year}</p><button className="mt-5 rounded-md border border-primary px-4 py-2 text-sm font-bold text-primary transition hover:bg-primary hover:text-white">Download / View</button></article>)}
         </div>
         <div className="mt-12 rounded-lg bg-white p-6 shadow-sm ring-1 ring-border">
           <h2 className="font-display text-3xl font-black text-primary">Financial Accountability</h2>
@@ -23,3 +23,4 @@ export default function TransparencyPage() {
     </main>
   );
 }
+

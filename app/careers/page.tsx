@@ -22,7 +22,7 @@ export default function CareersPage() {
           {(isHindi ? ["कार्यक्रम प्रबंधक", "परामर्शदाता", "अनुसंधान साथी", "क्षेत्र समन्वयक"] : ["Program Manager", "Counsellor", "Research Fellow", "Field Coordinator"]).map((x) => (
             <details key={x} className="rounded-lg bg-white p-6 shadow-sm">
               <summary className="cursor-pointer font-display text-xl font-black text-primary">{x} — {isHindi ? "कार्यक्रम" : "Programs"} — {isHindi ? "दिल्ली" : "Delhi"} — {isHindi ? "पूर्णकालिक" : "Full-time"}</summary>
-              <p className="mt-4 text-muted">{isHindi ? "स्थिति, जिम्मेदारियाँ, योग्यता और आवेदन निर्देशों का पूर्ण placeholder विवरण।" : "Full placeholder description for the position, responsibilities, qualifications, and application instructions."}</p>
+              <p className="mt-4 text-[#3D4451]">{isHindi ? "स्थिति, जिम्मेदारियाँ, योग्यता और आवेदन निर्देशों का पूर्ण placeholder विवरण।" : "Full placeholder description for the position, responsibilities, qualifications, and application instructions."}</p>
               <form className="mt-5 grid gap-3 md:grid-cols-3">
                 <input className="rounded-md border px-4 py-3" placeholder={isHindi ? "नाम" : "Name"} />
                 <input className="rounded-md border px-4 py-3" placeholder="Email" />
@@ -36,3 +36,4 @@ export default function CareersPage() {
     </main>
   );
 }
+

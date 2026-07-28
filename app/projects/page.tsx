@@ -22,7 +22,7 @@ export default function ProjectsPage() {
               <div className="p-5">
                 <div className="flex flex-wrap gap-2 text-xs font-bold"><span className="rounded-full bg-primary/10 px-3 py-1 text-primary">New Delhi</span><span className="rounded-full bg-accent/20 px-3 py-1 text-white">{tab === "Upcoming" ? "Starting Soon" : tab === "Completed" ? "Completed" : "Education"}</span></div>
                 <h2 className="mt-4 font-display text-xl font-black text-primary">{tab} Project {i + 1}</h2>
-                <p className="mt-2 text-sm leading-6 text-muted">Placeholder project description with beneficiaries, implementation area, and partner details.</p>
+                <p className="mt-2 text-sm leading-6 text-[#3D4451]">Placeholder project description with beneficiaries, implementation area, and partner details.</p>
                 {tab === "Ongoing" && <div className="mt-4 h-2 rounded-full bg-primary/10"><div className="h-2 rounded-full bg-accent" style={{ width: `${60 + i * 4}%` }} /></div>}
                 {tab === "Completed" && <p className="mt-4 font-bold text-green-700">Impact: {(i + 1) * 750}+ people reached</p>}
                 <button className="mt-5 rounded-md bg-accent px-4 py-2 text-sm font-bold text-white">View Details</button>
@@ -34,3 +34,4 @@ export default function ProjectsPage() {
     </main>
   );
 }
+

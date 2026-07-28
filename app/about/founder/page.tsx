@@ -4,15 +4,15 @@ import PageHero from "@/components/ui/PageHero";
 export default function FounderPage() {
   return (
     <main>
-      <PageHero title="Founder" breadcrumbs={[{label:"Home",href:"/"},{label:"About",href:"/about"},{label:"Founder"}]} />
-      
+      <PageHero title="Founder" breadcrumbs={[{ label: "Home", href: "/" }, { label: "About", href: "/about" }, { label: "Founder" }]} />
+
       {/* Founder Section */}
       <section className="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-8 lg:grid-cols-[0.8fr_1.2fr]">
         <Image src="/Founder.jpg" alt="Navin Kumar - Founder" width={720} height={760} className="rounded-lg object-cover w-full" />
         <div>
           <h2 className="font-display text-4xl font-black text-primary">Navin Kumar</h2>
           <p className="mt-1 text-sm font-bold text-accent uppercase tracking-widest">Founder, Irodov Charitable Trust</p>
-          <div className="mt-6 space-y-4 leading-8 text-muted text-[15px]">
+          <div className="mt-6 space-y-4 leading-8 text-[#1a1a1a] text-[15px]">
             <p>Every journey has a beginning. Mine began in a small town called Shahabad in Hardoi district of Uttar Pradesh, where I was born into a humble family. Financial hardship was a constant part of our lives. There were days when even paying my school fees seemed impossible, and continuing my education appeared to be nothing more than a distant dream.</p>
             <p>Fortunately, destiny introduced me to people whose kindness changed the course of my life. Qualifying for the State Government Scholarship Examination in Class V marked an important turning point. The scholarship I received from Classes VI to VIII covered my essential educational expenses and reinforced my confidence.</p>
             <p>When I took admission to Adarsh Rashtriya Inter College in Class IX, the then Principal, Shri Radheshyam Dixit, recognized my academic performance and generously waived my school fees. His compassion ensured that poverty did not force me to abandon my education.</p>
@@ -25,7 +25,7 @@ export default function FounderPage() {
             "Every human life is sacred, every dream deserves encouragement, and every heart deserves hope."
           </blockquote>
           <p className="mt-6 font-bold text-primary">Navin Kumar</p>
-          <p className="text-muted">Founder, Irodov Charitable Trust</p>
+          <p className="text-[#1a1a1a]">Founder, Irodov Charitable Trust</p>
         </div>
       </section>
 
@@ -46,12 +46,20 @@ export default function FounderPage() {
                 className="rounded-xl object-cover shadow-md mx-auto"
               />
               <p className="mt-4 font-bold text-primary text-lg">Late Shri Omnivas Gupta Ji</p>
-              <p className="text-sm text-muted">Mathematics Teacher</p>
-              <p className="text-sm text-muted">Shahabad, Hardoi, U.P.</p>
+              <p className="text-sm text-[#1a1a1a]">Mathematics Teacher</p>
+              <p className="text-sm text-[#1a1a1a]">Shahabad, Hardoi, U.P.</p>
             </div>
             <div className="flex-1">
-              <div className="text-4xl text-accent mb-4">🕯️</div>
-              <p className="leading-8 text-muted text-[15px]">
+              <div className="mb-4 flex justify-center">
+                <Image
+                  src="/images/students/Diya.jpeg"
+                  alt="Diya"
+                  width={48}
+                  height={48}
+                  className="h-30 w-30 object-contain"
+                />
+              </div>
+              <p className="leading-8 text-[#1A1A1A] text-[15px]">
                 The life of Late Shri Omnivas Gupta Ji exemplified the highest ideals of teaching — knowledge imparted with compassion, discipline enriched by humility, and service offered without expectation. His blessings shaped my destiny, and his immortal values continue to inspire every step of my journey and every mission I undertake.
               </p>
               <blockquote className="mt-6 border-l-4 border-accent pl-5 font-display text-xl font-bold text-primary italic">
@@ -60,7 +68,7 @@ export default function FounderPage() {
               <p className="mt-4 text-sm font-bold text-accent">— Navin Kumar, Founder</p>
             </div>
           </div>
-          <p className="mt-8 text-center text-sm text-muted italic">
+          <p className="mt-8 text-center text-sm text-[#1a1a1a] italic">
             This Trust is dedicated with deep reverence to Shri Omnivas Gupta Ji, whose selfless teaching continues to illuminate countless lives.
           </p>
         </div>

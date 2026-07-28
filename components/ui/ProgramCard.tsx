@@ -11,10 +11,11 @@ export default function ProgramCard({ title, desc, href, icon }: { title: string
         )}
       </span>
       <h3 className="mt-5 font-display text-xl font-black text-foreground">{title}</h3>
-      <p className="mt-3 flex-1 text-sm leading-6 text-muted">{desc}</p>
+      <p className="mt-3 flex-1 text-sm leading-6 text-[#3D4451]">{desc}</p>
       <Link href={href} className="mt-5 text-sm font-bold text-primary hover:text-accent">
         Learn More
       </Link>
     </article>
   );
 }
+

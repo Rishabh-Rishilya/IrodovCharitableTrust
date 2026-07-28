@@ -8,10 +8,11 @@ export default function EventCard({ date, title, location, type = "Event" }: { d
         <span className="rounded-full bg-accent/15 px-3 py-1 text-xs font-bold text-accent">{type}</span>
       </div>
       <h3 className="mt-5 font-display text-xl font-black">{title}</h3>
-      <p className="mt-2 text-sm text-muted">{location}</p>
+      <p className="mt-2 text-sm text-[#3D4451]">{location}</p>
       <Link href="/contact" className="mt-5 inline-block rounded-md bg-accent px-4 py-2 text-sm font-semibold text-white!">
         Register
       </Link>
     </article>
   );
 }
+
