@@ -8,9 +8,9 @@ export default function FounderPage() {
       
       {/* Founder Section */}
       <section className="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-8 lg:grid-cols-[0.8fr_1.2fr]">
-        <Image src="/Founder.jpg" alt="Naveen Kumar - Founder" width={720} height={760} className="rounded-lg object-cover w-full" />
+        <Image src="/Founder.jpg" alt="Navin Kumar - Founder" width={720} height={760} className="rounded-lg object-cover w-full" />
         <div>
-          <h2 className="font-display text-4xl font-black text-primary">Naveen Kumar</h2>
+          <h2 className="font-display text-4xl font-black text-primary">Navin Kumar</h2>
           <p className="mt-1 text-sm font-bold text-accent uppercase tracking-widest">Founder, Irodov Charitable Trust</p>
           <div className="mt-6 space-y-4 leading-8 text-muted text-[15px]">
             <p>Every journey has a beginning. Mine began in a small town called Shahabad in Hardoi district of Uttar Pradesh, where I was born into a humble family. Financial hardship was a constant part of our lives. There were days when even paying my school fees seemed impossible, and continuing my education appeared to be nothing more than a distant dream.</p>
@@ -24,7 +24,7 @@ export default function FounderPage() {
           <blockquote className="mt-8 border-l-4 border-accent pl-5 font-display text-2xl font-bold text-primary">
             "Every human life is sacred, every dream deserves encouragement, and every heart deserves hope."
           </blockquote>
-          <p className="mt-6 font-bold text-primary">Naveen Kumar</p>
+          <p className="mt-6 font-bold text-primary">Navin Kumar</p>
           <p className="text-muted">Founder, Irodov Charitable Trust</p>
         </div>
       </section>
@@ -37,7 +37,7 @@ export default function FounderPage() {
             <h2 className="mt-3 font-display text-4xl font-black text-primary">In Honour of Our Inspiration</h2>
           </div>
           <div className="flex flex-col items-center gap-8 rounded-2xl bg-white p-10 shadow-sm ring-1 ring-[#E5D9C3] md:flex-row md:items-start">
-            <div className="flex-shrink-0 text-center">
+            <div className="shrink-0 text-center">
               <Image
                 src="/Tribute.jpg"
                 alt="Late Shri Omnivas Gupta Ji"
@@ -57,7 +57,7 @@ export default function FounderPage() {
               <blockquote className="mt-6 border-l-4 border-accent pl-5 font-display text-xl font-bold text-primary italic">
                 "He did not merely teach me formulas; he taught me the meaning of compassion, responsibility, and giving back to society."
               </blockquote>
-              <p className="mt-4 text-sm font-bold text-accent">— Naveen Kumar, Founder</p>
+              <p className="mt-4 text-sm font-bold text-accent">— Navin Kumar, Founder</p>
             </div>
           </div>
           <p className="mt-8 text-center text-sm text-muted italic">

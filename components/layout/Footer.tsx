@@ -60,8 +60,8 @@ export default function Footer() {
           </p>
           <div className="mt-5 flex flex-wrap gap-3 text-sm font-bold text-[#FF6B35]">
             <a href="https://www.facebook.com/share/14iJmwop8Zm/" target="_blank" rel="noopener noreferrer">Facebook</a>
-            <span>Twitter</span>
-            <span>Instagram</span>
+            <a href="https://x.com/Naveen_JNU" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="https://www.instagram.com/irodov_charitable_trust?igsh=cHk2ZzhleDN3dnY5" target="_blank" rel="noopener noreferrer">Instagram</a>
             <span>YouTube</span>
             <span>LinkedIn</span>
           </div>
@@ -121,7 +121,7 @@ function FooterLinks({ items }: { items: string[][] }) {
   return (
     <div className="mt-4 grid gap-2 text-sm text-[#2D2D2D]">
       {items.map(([label, href]) => (
-        <Link key={href} href={href} className="text-sm !text-[#2D2D2D] hover:!text-[#FF6B35]">
+        <Link key={href} href={href} className="text-sm text-[#2D2D2D]! hover:text-[#FF6B35]!">
           {label}
         </Link>
       ))}

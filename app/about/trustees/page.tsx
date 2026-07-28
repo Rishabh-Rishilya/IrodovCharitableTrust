@@ -11,12 +11,12 @@ export default function TrusteesPage() {
         <article className="rounded-lg bg-white p-8 text-center shadow-sm ring-1 ring-border">
           <Image
             src="/Founder.jpg"
-            alt="Naveen Kumar"
+            alt="Navin Kumar"
             width={120}
             height={120}
             className="mx-auto h-40 w-32 rounded-xl object-cover shadow-md object-top"
           />
-          <h2 className="mt-5 font-display text-xl font-black text-primary">Naveen Kumar</h2>
+          <h2 className="mt-5 font-display text-xl font-black text-primary">Navin Kumar</h2>
           <p className="mt-1 text-sm font-bold text-accent">Founder & Managing Trustee</p>
           <ul className="mt-4 space-y-1 text-sm text-muted">
             <li>M.Sc Physics JNU, B.Ed.</li>

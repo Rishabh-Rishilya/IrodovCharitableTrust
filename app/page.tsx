@@ -21,7 +21,7 @@ export default function Home() {
       donateNow: "Donate Now",
       welcomeFromFounder: "Welcome from Founder",
       founderQuote: '"Every human life is sacred, every dream deserves encouragement, and every heart deserves hope. Our work is inspired by the conviction that God lives in every soul. Serving people with dignity is the essence of our mission."',
-      founderName: "Naveen Kumar",
+      founderName: "Navin Kumar",
       founderTitle: "Founder & Chairman, IRODOV Charitable Trust",
       visionLabel: "Vision",
       visionText: "We envision a world where knowledge enlightens every mind, compassion embraces every heart, and selfless service reflects the Divine presence within humanity. Guided by universal spiritual values, we seek to create communities where every individual is respected, empowered, and inspired to contribute towards peace, harmony, and collective well-being.",
@@ -209,7 +209,7 @@ export default function Home() {
       <section className="bg-surface px-5 py-16 sm:px-8">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.8fr_1.2fr]">
           <div className="grid place-items-center">
-            <Image src="/Founder.jpg" alt="Naveen Kumar" width={224} height={224} className="size-56 rounded-full object-cover object-top shadow-md" />
+            <Image src="/Founder.jpg" alt="Navin Kumar" width={224} height={224} className="size-56 rounded-full object-cover object-top shadow-md" />
           </div>
           <div className="self-center">
             <p className="text-sm font-black uppercase tracking-widest text-accent">{text.welcomeFromFounder}</p>
@@ -293,43 +293,6 @@ export default function Home() {
               />
             ))}
           </div>
-        </div>
-      </section>
-      <section className="bg-[#F5EFE0] px-5 py-16 text-primary sm:px-8" >
-        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-5 lg:grid-cols-3">
-          <div className="rounded-lg border border-[#E5D9C3] bg-white/60 p-6 text-center shadow-sm">
-            <p className="font-display text-4xl font-black text-accent">10000+</p>
-            <p className="mt-2 text-sm font-semibold text-primary">{text.livesImpacted}</p>
-            <p className="mt-2 text-xs text-[#4B6B8C]">{text.livesImpactedDesc}</p>
-          </div>
-          <div className="rounded-lg border border-[#E5D9C3] bg-white/60 p-6 text-center shadow-sm">
-            <p className="font-display text-4xl font-black text-accent">500+</p>
-            <p className="mt-2 text-sm font-semibold text-primary">{text.scholarships}</p>
-            <p className="mt-2 text-xs text-[#4B6B8C]">{text.scholarshipsDesc}</p>
-          </div>
-          <div className="rounded-lg border border-[#E5D9C3] bg-white/60 p-6 text-center shadow-sm">
-            <p className="font-display text-4xl font-black text-accent">15</p>
-            <p className="mt-2 text-sm font-semibold text-primary">{text.states}</p>
-            <p className="mt-2 text-xs text-[#4B6B8C]">{text.statesDesc}</p>
-          </div>
-          <div className="rounded-lg border border-[#E5D9C3] bg-white/60 p-6 text-center shadow-sm">
-            <p className="font-display text-4xl font-black text-accent">8</p>
-            <p className="mt-2 text-sm font-semibold text-primary">{text.yearsOfService}</p>
-            <p className="mt-2 text-xs text-[#4B6B8C]">{text.yearsOfServiceDesc}</p>
-          </div>
-          <div className="rounded-lg border border-[#E5D9C3] bg-white/60 p-6 text-center shadow-sm">
-            <p className="font-display text-4xl font-black text-accent">275+</p>
-            <p className="mt-2 text-sm font-semibold text-primary">{text.healthCamps}</p>
-            <p className="mt-2 text-xs text-[#4B6B8C]">{text.healthCampsDesc}</p>
-          </div>
-          <div className="rounded-lg border border-[#E5D9C3] bg-white/60 p-6 text-center shadow-sm">
-            <p className="font-display text-4xl font-black text-accent">1200+</p>
-            <p className="mt-2 text-sm font-semibold text-primary">{text.volunteers}</p>
-            <p className="mt-2 text-xs text-[#4B6B8C]">{text.volunteersDesc}</p>
-          </div>
-        </div>
-        <div className="mx-auto mt-8 max-w-7xl text-center">
-          <Link href="/publications" className="inline-block rounded-lg bg-accent px-5 py-3 font-black text-white!">{text.viewImpactReport}</Link>
         </div>
       </section>
 
