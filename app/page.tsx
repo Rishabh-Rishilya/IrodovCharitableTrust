@@ -16,17 +16,17 @@ export default function Home() {
   const t = {
     en: {
       heroTitle: "Empowering Lives Through Education, Health & Hope",
-      heroSubtitle: "A national charitable institution advancing education, psychological wellness, healthcare, research, and social welfare.",
+      heroSubtitle: "Transforming communities through quality education, mental well-being, healthcare, research, and compassionate social action—building a future where every individual has the opportunity to learn, heal, and thrive.",
       explorePrograms: "Explore Programs",
       donateNow: "Donate Now",
       welcomeFromFounder: "Welcome from Founder",
-      founderQuote: '"IRODOV Charitable Trust exists to serve humanity with compassion, clarity, and disciplined action. We believe education, mental health, and social support can restore hope where it is needed most."',
-      founderName: "Dr. [Founder Name]",
+      founderQuote: '"Every human life is sacred, every dream deserves encouragement, and every heart deserves hope. Our work is inspired by the conviction that God lives in every soul. Serving people with dignity is the essence of our mission."',
+      founderName: "Naveen Kumar",
       founderTitle: "Founder & Chairman, IRODOV Charitable Trust",
       visionLabel: "Vision",
-      visionText: "To build an inclusive society where every individual has access to quality education, mental health support, and opportunities for holistic development.",
+      visionText: "We envision a world where knowledge enlightens every mind, compassion embraces every heart, and selfless service reflects the Divine presence within humanity. Guided by universal spiritual values, we seek to create communities where every individual is respected, empowered, and inspired to contribute towards peace, harmony, and collective well-being.",
       missionLabel: "Mission",
-      missionText: "To serve humanity through education, psychological wellness, healthcare, research, and social welfare, with transparency, compassion, and excellence.",
+      missionText: "IRODOV Charitable Trust believes that service to humanity is service to the Divine. Through education, mental health support, healthcare, research, and compassionate social initiatives, we dedicate ourselves to uplifting lives with humility, integrity, and excellence, transforming hope into opportunity and creating lasting positive change for individuals and communities alike.",
       coreValuesHeading: "Our Core Values",
       compassion: "Compassion",
       compassionDesc: "We serve every person with dignity, warmth, and care.",
@@ -209,9 +209,7 @@ export default function Home() {
       <section className="bg-surface px-5 py-16 sm:px-8">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.8fr_1.2fr]">
           <div className="grid place-items-center">
-            <div className="grid size-56 place-items-center rounded-full bg-surface-2 text-5xl font-black text-primary shadow-inner">
-              FN
-            </div>
+            <Image src="/Founder.jpg" alt="Naveen Kumar" width={224} height={224} className="size-56 rounded-full object-cover object-top shadow-md" />
           </div>
           <div className="self-center">
             <p className="text-sm font-black uppercase tracking-widest text-accent">{text.welcomeFromFounder}</p>

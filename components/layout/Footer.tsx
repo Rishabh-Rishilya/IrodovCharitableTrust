@@ -59,7 +59,7 @@ export default function Footer() {
             A national charitable institution serving education, mental wellness, healthcare, research, and social welfare.
           </p>
           <div className="mt-5 flex flex-wrap gap-3 text-sm font-bold text-[#FF6B35]">
-            <span>Facebook</span>
+            <a href="https://www.facebook.com/share/14iJmwop8Zm/" target="_blank" rel="noopener noreferrer">Facebook</a>
             <span>Twitter</span>
             <span>Instagram</span>
             <span>YouTube</span>

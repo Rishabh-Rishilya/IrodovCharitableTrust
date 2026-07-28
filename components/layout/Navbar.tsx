@@ -24,8 +24,6 @@ const moreLinks = [
   ["Students", "/students"],
   ["Get Involved", "/get-involved"],
   ["Events", "/events"],
-  ["Transparency", "/transparency"],
-  ["Publications", "/publications"],
 ];
 
 const drawerLinks = [...mainLinks, ...moreLinks, ["Projects", "/projects"], ["Vision & Mission", "/vision-mission"], ["Donate Now", "/donate"]];
@@ -94,7 +92,6 @@ export default function Navbar() {
             <MenuLink href="/about" onClick={() => setAboutOpen(false)}>About Us</MenuLink>
             <MenuLink href="/about/founder" onClick={() => setAboutOpen(false)}>Founder</MenuLink>
             <MenuLink href="/about/trustees" onClick={() => setAboutOpen(false)}>Trustees</MenuLink>
-            <MenuLink href="/about/governance" onClick={() => setAboutOpen(false)}>Governance</MenuLink>
           </Dropdown>
           <Dropdown label="Programs" open={programsOpen} setOpen={setProgramsOpen} menuRef={programsRef}>
             <div className="grid w-155 grid-cols-2 gap-2 p-1">

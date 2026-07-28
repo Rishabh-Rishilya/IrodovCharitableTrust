@@ -15,16 +15,28 @@ export default function ContactPage() {
         <ContactForm title={isHindi ? "संपर्क फ़ॉर्म" : "Contact Form"} />
         <div className="rounded-lg bg-white p-6 shadow-sm ring-1 ring-border">
           <h2 className="font-display text-2xl font-black text-primary">IRODOV Charitable Trust</h2>
-          <p className="mt-4 leading-7 text-muted">
-            {isHindi ? "पंजीकृत कार्यालय: नई दिल्ली, भारत" : "Registered Office: New Delhi, India"}
-            <br />
-            {isHindi ? "फोन: 1800-XXX-XXXX" : "Phone: 1800-XXX-XXXX"}
-            <br />
-            {isHindi ? "ईमेल: contact@irodovtrust.org" : "Email: contact@irodovtrust.org"}
-            <br />
-            {isHindi ? "कार्य घंटा: सोम-शुक्र, सुबह 10 - शाम 6" : "Working Hours: Mon-Sat, 10 AM - 6 PM"}
-          </p>
-          <iframe className="mt-6 h-72 w-full rounded-lg border-0" src="https://maps.google.com/maps?q=New%20Delhi%20India&t=&z=11&ie=UTF8&iwloc=&output=embed" title="IRODOV Delhi address map" />
+          <div className="mt-6 space-y-4">
+            <div>
+              <p className="text-sm font-bold uppercase tracking-wide text-primary">Registered Office</p>
+              <p className="mt-1 leading-7 text-muted">
+                1175, C-2 Block, Palam Vihar
+                <br />
+                Gurgaon, Haryana, India
+                <br />
+                PIN - 122017
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-bold uppercase tracking-wide text-primary">Phone</p>
+              <p className="mt-1 text-muted">+91 9717232575</p>
+              <p className="text-muted">+91 9971060575</p>
+            </div>
+            <div>
+              <p className="text-sm font-bold uppercase tracking-wide text-primary">Email</p>
+              <p className="mt-1 text-muted">info@irodovcharitabletrust.org</p>
+              <p className="text-muted">helpdesk@irodovcharitabletrust.org</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>

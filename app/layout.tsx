@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter, Merriweather } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/layout/Footer";
-import MentalHealthPill from "@/components/layout/MHPill";
 import Navbar from "@/components/layout/Navbar";
 import BackToTop from "@/components/layout/BackToTop";
 import CookieBanner from "@/components/layout/CookieBanner";
@@ -74,11 +73,10 @@ export default function RootLayout({
   return (
     <html lang="en" data-scroll-behavior="smooth" className={`${inter.variable} ${merriweather.variable} h-full antialiased`}>
       <body className="min-h-full font-sans">
-        <LanguageProvider>
+          <LanguageProvider>
           <Navbar />
           <PageTransition>{children}</PageTransition>
           <Footer />
-          <MentalHealthPill />
           <WhatsAppButton />
           <BackToTop />
           <CookieBanner />
